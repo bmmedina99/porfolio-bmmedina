@@ -31,7 +31,7 @@
    ```bash
    pnpm dev
    ```
-4. Abre tu navegador y visita http://localhost:4321/
+4. Abre tu navegador y visita http://localhost:4000/
 
 ## 📞 Contacto
 
