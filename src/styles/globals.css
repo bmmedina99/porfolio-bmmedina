@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#030014] text-[#f6f6f6]
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#c084fc] via-[#22d2f0] to-[#00ffaa] text-transparent bg-clip-text tracking-wide
+}
