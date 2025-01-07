@@ -1,0 +1,27 @@
+---
+import "@/styles/globals.css";
+
+const canonicalURL = new URL(Astro.request.url, Astro.site);
+const { title, description } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title}</title>
+<meta name="generator" content={Astro.generator} />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
+<link rel="icon" href="/icon.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="/icon.png" type="image/png" sizes="256x256">
+<link rel="sitemap" href="/sitemap.xml" />
+<link rel="canonical" href={canonicalURL} />
+<meta name="description" content={description} />
+<!-- Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalURL} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
