@@ -10,6 +10,40 @@ const { ...head } = Astro.props
     <Meta {...head} />
   </head>
   <body>
+    <header>
+      <nav class="flex justify-center items-center w-full h-[65px]">
+        <div
+          class="max-w-7xl mx-auto flex justify-center items-center rounded-full px-8 py-4 bg-[#030014]/60 shadow-[#2a0e61]/40 shadow-lg border-[#7042f8]/40 border'"
+        >
+          <ul class="flex gap-8">
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-2 text-[#22d2f0] hover:text-[#5fd4d4] text-lg"
+                >Experiencia</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-2 text-[#22d2f0] hover:text-[#5fd4d4] text-lg"
+                >Proyectos</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-2 text-[#22d2f0] hover:text-[#5fd4d4] text-lg"
+                >Sobre mí</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-2 text-[#22d2f0] hover:text-[#5fd4d4] text-lg"
+                >Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main class="flex flex-col w-full h-full">
       <slot />
     </main>
