@@ -1,0 +1,29 @@
+---
+import { NAV_ITEMS } from '@/constants'
+import { capitalLetter, slugify } from '@/utils'
+---
+
+<header>
+  <nav class="flex justify-center items-center w-full h-[65px]">
+    <div
+      class="max-w-7xl mx-auto flex justify-center items-center backdrop-blur-md rounded-full px-8 py-4 bg-[#030014]/60 shadow-[#2a0e61]/60 shadow-lg border-[#7042f8]/40 border"
+    >
+      <ul class="flex gap-8">
+        {
+          NAV_ITEMS.map((item) => (
+            <li>
+              <a
+                href={`#${slugify(item.label)}`}
+                class="flex items-center gap-2 text-[#f6f6f6] hover:text-[#22d2f0] transition-colors"
+              >
+                <span class="text-sm opacity-50">&lt;</span>
+                <span class="text-lg">{capitalLetter(item.label)}</span>
+                <span class="text-sm opacity-50">/&gt;</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </nav>
+</header>
