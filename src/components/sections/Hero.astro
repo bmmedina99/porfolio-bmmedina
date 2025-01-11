@@ -1,6 +1,6 @@
 ---
-import ChevronDown from '../icons/ChevronDown.astro'
-import Navbar from '../ui/Navbar.astro'
+import { ChevronDown } from '../icons/Svgs'
+import Navbar from '../ui/Navbar'
 ---
 
 <section
@@ -16,14 +16,14 @@ import Navbar from '../ui/Navbar.astro'
         <span class="text-[#22d2f0]">Frontend</span> &amp;
         <span class="text-[#00ffaa]">Backend</span>
       </h2>
-      <Navbar />
+      <Navbar client:load />
     </div>
     <div class="flex items-center justify-center animate-bounce pb-12">
       <a
         href="#experiencia"
         class="flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0]"
       >
-        <ChevronDown class:list={"text-[#22d2f0]"} />
+        <ChevronDown />
       </a>
     </div>
   </div>
