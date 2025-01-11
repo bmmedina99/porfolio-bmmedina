@@ -1,16 +1,30 @@
 ---
-import Navbar from "../ui/Navbar.astro"
+import ChevronDown from '../icons/ChevronDown.astro'
+import Navbar from '../ui/Navbar.astro'
 ---
 
-<section id="home" class="flex justify-center items-center relative w-full min-h-screen">
-  <div class="flex flex-col justify-center text-center gap-5">
-    <h1 class="text-5xl sm:text-[6vw] font-bold uppercase">Brandon Medina</h1>
-    <h2 class="text-xl font-medium uppercase">
-      Desarrollador Web
-      <span class="gradient-text">Full Stack</span>,
-      <span class="text-[#22d2f0]">Frontend</span> &amp;
-      <span class="text-[#00ffaa]">Backend</span>
-    </h2>
-    <Navbar />
+<section
+  id="home"
+  class="flex justify-center items-center relative w-full min-h-screen"
+>
+  <div class="flex flex-col justify-center h-dvh">
+    <div class="flex flex-col flex-grow justify-center text-center gap-5">
+      <h1 class="text-5xl sm:text-[6vw] font-bold uppercase">Brandon Medina</h1>
+      <h2 class="text-xl font-medium uppercase">
+        Desarrollador Web
+        <span class="gradient-text">Full Stack</span>,
+        <span class="text-[#22d2f0]">Frontend</span> &amp;
+        <span class="text-[#00ffaa]">Backend</span>
+      </h2>
+      <Navbar />
+    </div>
+    <div class="flex items-center justify-center animate-bounce pb-12">
+      <a
+        href="#experiencia"
+        class="flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0]"
+      >
+        <ChevronDown class:list={"text-[#22d2f0]"} />
+      </a>
+    </div>
   </div>
 </section>
