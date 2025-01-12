@@ -1,7 +1,7 @@
 import { NAV_ITEMS } from '@/constants'
 import { capitalLetter, scrollToTop, slugify } from '@/utils'
 import { useEffect, useRef, useState } from 'react'
-import { ChevronUp } from '../icons/Svgs'
+import { ChevronUp } from '../icons/Iconbase'
 
 export default function Navbar() {
   const [initialOffsetTop, setInitialOffsetTop] = useState<number | null>(null)

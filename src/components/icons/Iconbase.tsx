@@ -1,9 +1,8 @@
 export const ChevronUp = () => {
   return (
     <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
+      width={24}
+      height={24}
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
@@ -25,9 +24,8 @@ export const ChevronUp = () => {
 export const ChevronDown = () => {
   return (
     <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
+      width={24}
+      height={24}
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
@@ -35,7 +33,7 @@ export const ChevronDown = () => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <title>Ir a la siguiente sección</title>
+      <title>Ir abajo</title>
       <path
         stroke='none'
         d='M0 0h24v24H0z'
@@ -49,9 +47,8 @@ export const ChevronDown = () => {
 export const Menu = () => {
   return (
     <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
+      width={24}
+      height={24}
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
@@ -68,6 +65,30 @@ export const Menu = () => {
       <path d='M4 6l16 0' />
       <path d='M4 12l16 0' />
       <path d='M4 18l16 0' />
+    </svg>
+  )
+}
+
+export const Iconbase = () => {
+  return (
+    <svg
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
+      <title>Cerrar</title>
+      <path
+        stroke='none'
+        d='M0 0h24v24H0z'
+        fill='none'
+      />
+      <path d='M18 6l-12 12' />
+      <path d='M6 6l12 12' />
     </svg>
   )
 }
