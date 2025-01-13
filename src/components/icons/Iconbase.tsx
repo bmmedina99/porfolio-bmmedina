@@ -69,7 +69,7 @@ export const Menu = () => {
   )
 }
 
-export const Iconbase = () => {
+export const Close = () => {
   return (
     <svg
       width={24}
