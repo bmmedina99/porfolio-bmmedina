@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  @apply bg-[#6347ff]/60
+}
+
+::-webkit-scrollbar {
+  @apply w-3
+}
+
+::-webkit-scrollbar-thumb {
+   @apply bg-gradient-to-b from-[#c084fc] via-[#22d2f0] to-[#00ffaa] rounded-md border-4 border-solid border-[#030014]
+}
+
+html {
+  @apply scroll-smooth
+}
+
 body {
   @apply bg-[#030014] text-[#f6f6f6]
 }

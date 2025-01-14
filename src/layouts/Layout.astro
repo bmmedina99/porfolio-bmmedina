@@ -10,7 +10,7 @@ const { ...head } = Astro.props
     <Meta {...head} />
   </head>
   <body>
-    <main class="flex flex-col w-full h-full">
+    <main class="flex flex-col w-full h-full overflow-y-hidden">
       <slot />
     </main>
   </body>
