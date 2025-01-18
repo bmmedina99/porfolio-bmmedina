@@ -1,3 +1,24 @@
-<section id="experiencia" class="flex justify-center items-center relative w-full min-h-screen">
-  <h2>Experiencia</h2>
+---
+import ExperienceDetails from '../ui/ExperienceDetails'
+---
+
+<section
+  id="experiencia"
+  class="flex justify-center items-center relative w-full min-h-screen"
+>
+  <img
+    src="images/tech.svg"
+    alt="Stack Tecnologies"
+    class="absolute right-0 opacity-40 select-none object-contain"
+    width="650"
+    height="650"
+  />
+  <div class="relative w-full max-w-6xl">
+    <h2
+      class="text-3xl font-bold text-center uppercase text-[#6347ff] tracking-wide mb-8"
+    >
+      Experiencia
+    </h2>
+    <ExperienceDetails client:load />
+  </div>
 </section>

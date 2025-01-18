@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::selection {
-  @apply bg-[#6347ff]/60
+  @apply bg-[#6347ff]/40
 }
 
 ::-webkit-scrollbar {
