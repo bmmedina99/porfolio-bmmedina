@@ -15,7 +15,7 @@
 }
 
 html {
-  @apply scroll-smooth
+  @apply scroll-smooth scroll-pt-10
 }
 
 body {
