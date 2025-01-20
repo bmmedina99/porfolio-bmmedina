@@ -102,7 +102,7 @@ export default function Navbar() {
         className={`fixed bottom-6 right-6 text-[#22d2f0] border border-[#22d2f0] shadow-lg shadow-[#22d2f0]/50 rounded-full p-3 transition-opacity duration-300 z-20 ${isShowScrollTop ? 'visible opacity-100' : 'invisible opacity-0'}`}
         onClick={scrollToTop}
       >
-        <ChevronUp />
+        <ChevronUp title='Ir a experiencia' />
       </button>
     </nav>
   )

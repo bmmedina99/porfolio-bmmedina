@@ -1,14 +1,16 @@
 ---
 import { ChevronDown } from '../icons/Iconbase'
 import Navbar from '../ui/Navbar'
-import Orbe from '../ui/Orbe.astro'
 ---
 
 <section
   id="home"
-  class="flex justify-center items-center relative w-full min-h-screen"
+  class="flex flex-col justify-center items-center relative w-full min-h-screen"
 >
-  <Orbe />
+  <div
+    class="absolute z-10 overflow-hidden w-[600px] h-[600px] bg-gradient-to-br from-[#2a0e61]/60 to-transparent blur-3xl rounded-full animate-pulse"
+  >
+  </div>
   <div class="flex flex-col h-dvh z-50">
     <div class="flex flex-col flex-grow justify-center text-center gap-5">
       <h1 class="text-5xl sm:text-[6vw] font-bold uppercase">Brandon Medina</h1>
@@ -25,7 +27,7 @@ import Orbe from '../ui/Orbe.astro'
         href="#experiencia"
         class="flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0]"
       >
-        <ChevronDown />
+        <ChevronDown title='Ir al inicio'/>
       </a>
     </div>
   </div>
