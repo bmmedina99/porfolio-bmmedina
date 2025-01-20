@@ -5,8 +5,8 @@ export const ChevronUp = ({ title }: { title: string }) => {
       height={24}
       viewBox='0 0 24 24'
       fill='none'
-      stroke='currentColor'
       strokeWidth={2}
+      stroke='currentColor'
       strokeLinecap='round'
       strokeLinejoin='round'
     >
@@ -96,10 +96,14 @@ export const Close = () => {
 export const Location = () => {
   return (
     <svg
-      width={24}
-      height={24}
+      width={16}
+      height={16}
       viewBox='0 0 24 24'
-      fill='currentColor'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
     >
       <title>Ubicación</title>
       <path
@@ -115,8 +119,8 @@ export const Location = () => {
 export const Website = () => {
   return (
     <svg
-      width={24}
-      height={24}
+      width={16}
+      height={16}
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
