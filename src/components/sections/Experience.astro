@@ -2,19 +2,20 @@
 import ExperienceDetails from '../ui/ExperienceDetails'
 ---
 
-<section
-  id="experiencia"
-  class="flex flex-col justify-center items-center relative w-full min-h-screen"
->
-  <img
-    src="images/tech.svg"
-    alt="Stack Tecnologies"
-    class="absolute right-0 opacity-40 select-none object-contain"
-    width="650"
-    height="650"
-  />
-  <header class="text-[#6347ff] uppercase text-center mb-8">
-    <h2 class="text-3xl font-bold tracking-wide">Experiencia</h2>
-  </header>
-  <ExperienceDetails client:load />
+<section id="experiencia" class="mt-24 mb-36 md:px-12 px-6 relative">
+  <div class="max-w-4xl mx-auto relative z-10">
+    <header class="text-center uppercase mb-10">
+      <h2 class="text-[#6347ff] text-5xl font-semibold tracking-wide">
+        Experiencia
+      </h2>
+    </header>
+    <ExperienceDetails client:load />
+    <img
+      src="images/tech.svg"
+      alt="Stack Tecnologies"
+      class="absolute top-0 right-0 opacity-20 z-[-1] object-contain"
+      width="600"
+      height="600"
+    />
+  </div>
 </section>
