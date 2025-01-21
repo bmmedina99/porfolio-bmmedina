@@ -23,11 +23,11 @@ export default function Navbar() {
       let currentActiveSection = 'home'
       for (const item of NAV_ITEMS) {
         const section = document.querySelector(`#${slugify(item.label)}`)
-        if (
-          section &&
-          window.scrollY >=
-            section.getBoundingClientRect().top + window.scrollY - 65
-        )
+        const sectionScrollPosition = section
+          ? window.scrollY + section.getBoundingClientRect().top
+          : 0
+
+        if (sectionScrollPosition >= sectionScrollPosition - 65)
           currentActiveSection = item.label
 
         setActive(currentActiveSection)
