@@ -12,7 +12,7 @@ export default function ExperienceDetails() {
       {EXPERIENCES.map((experience) => (
         <article key={experience.id}>
           <div
-            className='w-full bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md'
+            className='w-full bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md select-none'
             onClick={() => handleExpand(experience.id)}
             onKeyDown={() => handleExpand(experience.id)}
           >
