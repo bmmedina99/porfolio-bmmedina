@@ -3,16 +3,16 @@ import { useState } from 'react'
 import { ChevronDown, ChevronUp, Location, Website } from '../icons/Iconbase'
 
 export default function ExperienceDetails() {
-  const [expanded, setExpanded] = useState(0)
+  const [expanded, setExpanded] = useState(EXPERIENCES.length - 1)
 
   const handleExpand = (id: number) => setExpanded(expanded === id ? -1 : id)
 
   return (
-    <>
+    <div className='flex flex-col-reverse relative'>
       {EXPERIENCES.map((experience) => (
         <article key={experience.id}>
           <div
-            className='w-full bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md'
+            className='w-full bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md select-none'
             onClick={() => handleExpand(experience.id)}
             onKeyDown={() => handleExpand(experience.id)}
           >
@@ -98,6 +98,6 @@ export default function ExperienceDetails() {
           </div>
         </article>
       ))}
-    </>
+    </div>
   )
 }

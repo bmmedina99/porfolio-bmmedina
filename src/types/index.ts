@@ -5,6 +5,6 @@ export interface Experience {
   startDate: string
   endDate: string
   description: string[]
-  details: { text: string; link?: string }[]
   technologies: string[]
+  details: { text: string; link?: string }[]
 }
