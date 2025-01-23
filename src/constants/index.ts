@@ -44,7 +44,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: 2,
-    title: 'Freelance',
+    title: 'Desarrollador Web Freelance',
     company: 'Gray Gorilla Fitness',
     startDate: 'Dec. 2021',
     endDate: 'Oct. 2022',
