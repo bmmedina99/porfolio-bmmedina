@@ -75,7 +75,7 @@ export default function ExperienceDetails() {
                             <Website />
                           </span>
                           <a
-                            href='{detail.link}'
+                            href={detail.link}
                             target='_blank'
                             rel='noopener noreferrer'
                           >
