@@ -48,7 +48,7 @@ export default function Navbar() {
       className={`flex items-center w-full h-[65px] select-none z-50 ${isNavbarFixed ? 'fixed top-0 right-0 w-full' : 'relative'}`}
     >
       <div className='max-w-7xl mx-auto flex justify-center items-center backdrop-blur-md rounded-full px-8 py-4 bg-[#030014]/60 shadow-lg shadow-[#2a0e61]/60 border border-[#7042f8]/40'>
-        <ul className='hidden md:flex gap-8'>
+        <ul className='hidden gap-8 md:flex'>
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>
               <a
