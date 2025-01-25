@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  @apply scroll-smooth scroll-pt-20
+  @apply scroll-smooth scroll-pt-16
 }
 
 ::selection {
