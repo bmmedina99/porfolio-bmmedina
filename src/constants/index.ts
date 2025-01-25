@@ -19,10 +19,19 @@ export const EXPERIENCES: Experience[] = [
       'Optimización de procesos, logrando reducir el tiempo de resolución de tareas críticas a la mitad de lo solicitado.',
       'Experiencia en gestión de actualizaciones y parches en red mediante WSUS, asegurando el correcto funcionamiento de los equipos.',
     ],
-    technologies: ['WSUS', 'Lansweeper', 'Soporte técnico', 'Optimización de procesos', 'Comunicación técnica efectiva'],
+    technologies: [
+      'WSUS',
+      'Lansweeper',
+      'Soporte técnico',
+      'Optimización de procesos',
+      'Comunicación técnica efectiva',
+    ],
     details: [
       { text: 'Magallanes, Madrid' },
-      { text: 'empresariosagrupados.es', link: 'https://www.empresariosagrupados.es' },
+      {
+        text: 'empresariosagrupados.es',
+        link: 'https://www.empresariosagrupados.es',
+      },
     ],
   },
   {
@@ -36,7 +45,13 @@ export const EXPERIENCES: Experience[] = [
       'Automatización del proceso de transferencia de archivos al servidor mediante SFTP, mejorando significativamente la eficiencia operativa.',
       'Uso de bases de datos para la manipulación y extracción de datos, aplicando principios de programación robusta y eficiente.',
     ],
-    technologies: ['Python', 'Base de datos', 'Automatización', 'Optimización con SFTP', 'Resolución de problemas técnicos'],
+    technologies: [
+      'Python',
+      'Base de datos',
+      'Automatización',
+      'Optimización con SFTP',
+      'Resolución de problemas técnicos',
+    ],
     details: [
       { text: 'Nuevos Ministerios, Madrid' },
       { text: 'amat.es', link: 'https://www.amat.es' },
@@ -53,10 +68,20 @@ export const EXPERIENCES: Experience[] = [
       'Implementé una interfaz clara y funcional para mostrar los productos, con redirección directa a Amazon para la compra, mejorando la experiencia del usuario.',
       'Colaboré con los propietarios para entender sus necesidades y proporcionar una solución ajustada a sus objetivos comerciales.',
     ],
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Posicionamiento SEO', 'Resolución autónoma', 'Integración con Amazon FBA'],
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Posicionamiento SEO',
+      'Resolución autónoma',
+      'Integración con Amazon FBA',
+    ],
     details: [
       { text: 'Remoto' },
-      { text: 'graygorillafitness.com', link: 'https://graygorillafitness.com' },
+      {
+        text: 'graygorillafitness.com',
+        link: 'https://graygorillafitness.com',
+      },
     ],
   },
   {
@@ -70,7 +95,13 @@ export const EXPERIENCES: Experience[] = [
       'Registro y análisis de incidencias en herramientas como BMC Remedy, contribuyendo a mejorar la base de conocimiento del equipo.',
       'Colaboración con diferentes departamentos, comunicando de manera clara y efectiva para resolver problemas críticos.',
     ],
-    technologies: ['Control-M', 'BMC Remedy', 'Monitoreo de sistemas', 'Toma de decisiones críticas','Liderazgo en turno rotativo'],
+    technologies: [
+      'Control-M',
+      'BMC Remedy',
+      'Monitoreo de sistemas',
+      'Toma de decisiones críticas',
+      'Liderazgo en turno rotativo',
+    ],
     details: [
       { text: 'Tres Cantos, Madrid' },
       { text: 'izertis.com', link: 'https://www.izertis.com/es/' },
