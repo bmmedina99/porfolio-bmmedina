@@ -23,15 +23,16 @@ export default function Navbar() {
       let currentActiveSection = 'home'
       for (const item of NAV_ITEMS) {
         const section = document.querySelector(`#${slugify(item.label)}`)
+
         if (
           section &&
           window.scrollY >=
-            section.getBoundingClientRect().top + window.scrollY - 65
+            section.getBoundingClientRect().top + window.scrollY - 96
         )
           currentActiveSection = item.label
 
         setActive(currentActiveSection)
-        setIsShowScrollTop(window.scrollY > window.innerHeight - 65)
+        setIsShowScrollTop(window.scrollY > window.innerHeight - 96)
       }
     }
 
@@ -48,7 +49,7 @@ export default function Navbar() {
       className={`flex items-center w-full h-[65px] select-none z-50 ${isNavbarFixed ? 'fixed top-0 right-0 w-full' : 'relative'}`}
     >
       <div className='max-w-7xl mx-auto flex justify-center items-center backdrop-blur-md rounded-full px-8 py-4 bg-[#030014]/60 shadow-lg shadow-[#2a0e61]/60 border border-[#7042f8]/40'>
-        <ul className='hidden md:flex gap-8'>
+        <ul className='hidden gap-8 md:flex'>
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>
               <a
@@ -102,7 +103,7 @@ export default function Navbar() {
         className={`fixed bottom-6 right-6 text-[#22d2f0] border border-[#22d2f0] shadow-lg shadow-[#22d2f0]/50 rounded-full p-3 transition-opacity duration-300 z-20 ${isShowScrollTop ? 'visible opacity-100' : 'invisible opacity-0'}`}
         onClick={scrollToTop}
       >
-        <ChevronUp />
+        <ChevronUp title='Ir a experiencia' />
       </button>
     </nav>
   )

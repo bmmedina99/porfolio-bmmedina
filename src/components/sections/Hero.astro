@@ -1,32 +1,38 @@
 ---
 import { ChevronDown } from '../icons/Iconbase'
 import Navbar from '../ui/Navbar'
-import Orbe from '../ui/Orbe.astro'
 ---
 
 <section
   id="home"
-  class="flex justify-center items-center relative w-full min-h-screen"
+  class="relative flex flex-col items-center justify-center w-full min-h-screen"
+  arial-label="Inicio"
 >
-  <Orbe />
-  <div class="flex flex-col h-dvh z-50">
-    <div class="flex flex-col flex-grow justify-center text-center gap-5">
+  <div class="z-10 flex flex-col h-dvh">
+    <header class="flex flex-col justify-center flex-grow gap-5 text-center">
       <h1 class="text-5xl sm:text-[6vw] font-bold uppercase">Brandon Medina</h1>
-      <h2 class="text-xl font-medium text-pretty uppercase">
+      <h2 class="text-xl font-medium uppercase text-pretty">
         Desarrollador Web
         <span class="gradient-text">Full Stack</span>,
         <span class="text-[#22d2f0]">Frontend</span> &amp;
         <span class="text-[#00ffaa]">Backend</span>
       </h2>
       <Navbar client:load />
-    </div>
-    <div class="flex items-center justify-center animate-bounce pb-12">
-      <a
-        href="#experiencia"
+    </header>
+    <div class="flex items-center justify-center pb-12 animate-bounce">
+      <button
+        type="button"
         class="flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0]"
+        aria-label="Ir a la sección de experiencia"
+        onclick="document.getElementById('#experiencia').scrollIntoView({ behavior: 'smooth' })"
       >
-        <ChevronDown />
-      </a>
+        <ChevronDown title="Ir al inicio" />
+      </button>
     </div>
+  </div>
+  <div
+    class="absolute overflow-hidden w-[600px] h-[600px] bg-gradient-to-br from-[#2a0e61]/60 to-transparent blur-3xl rounded-full animate-pulse"
+    aria-hidden="true"
+  >
   </div>
 </section>
