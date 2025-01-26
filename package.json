@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "astro dev --port=4000",
     "build": "astro build",
-    "release": "pnpx semantic-release --no-ci",
-    "release:test": "pnpx semantic-release",
+    "release": "pnpx semantic-release",
     "preview": "astro preview --port=5000",
     "fmt": "pnpm biome format --write .",
     "lint": "pnpm biome lint --write ."
