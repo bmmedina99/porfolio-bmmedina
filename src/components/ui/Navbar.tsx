@@ -46,7 +46,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`flex items-center w-full h-[65px] select-none z-50 ${isNavbarFixed ? 'fixed top-0 right-0 w-full' : 'relative'}`}
+      className={`flex items-center w-full h-[65px] select-none z-50 mt-4 ${isNavbarFixed ? 'fixed top-0 right-0' : 'relative'}`}
     >
       <div className='max-w-7xl mx-auto flex justify-center items-center backdrop-blur-md rounded-full px-8 py-4 bg-[#030014]/60 shadow-lg shadow-[#2a0e61]/60 border border-[#7042f8]/40'>
         <ul className='hidden gap-8 md:flex'>

@@ -12,7 +12,7 @@ import Navbar from '../ui/Navbar'
     aria-hidden="true"
   >
   </div>
-  <div class="z-10 px-4 mb-4 space-y-6 text-center uppercase">
+  <div class="z-10 px-4 space-y-6 text-center uppercase">
     <h1 class="text-5xl font-bold md:text-7xl">Brandon Medina</h1>
     <p class="text-lg font-medium md:text-xl text-pretty">
       Desarrollador Web
@@ -20,8 +20,8 @@ import Navbar from '../ui/Navbar'
       <strong class="text-[#22d2f0]">Frontend</strong> &amp;
       <strong class="text-[#00ffaa]">Backend</strong>
     </p>
+    <Navbar client:load />
   </div>
-  <Navbar client:load />
   <button
     type="button"
     class="absolute bottom-8 z-10 flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0] animate-bounce"
