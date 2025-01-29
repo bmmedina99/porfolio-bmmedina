@@ -1,3 +1,47 @@
+export const Expand = () => {
+  return (
+    <svg
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      strokeWidth={2}
+      stroke='currentColor'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
+      <path
+        stroke='none'
+        d='M0 0h24v24H0z'
+        fill='none'
+      />
+      <path d='M4 11l8 3l8 -3' />
+    </svg>
+  )
+}
+
+export const Collapse = () => {
+  return (
+    <svg
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      strokeWidth={2}
+      stroke='currentColor'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
+      <path
+        stroke='none'
+        d='M0 0h24v24H0z'
+        fill='none'
+      />
+      <path d='M4 13l8 -3l8 3' />
+    </svg>
+  )
+}
+
 export const ChevronUp = () => {
   return (
     <svg
