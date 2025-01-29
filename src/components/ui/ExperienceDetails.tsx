@@ -28,13 +28,10 @@ export default function ExperienceDetails() {
               </div>
               <button
                 type='button'
+                aria-label={`${expanded === experience.id ? 'Contraer' : 'Expandir'} ${experience.title}`}
                 className='text-[#c084fc] cursor-pointer'
               >
-                {expanded === experience.id ? (
-                  <ChevronUp/>
-                ) : (
-                  <ChevronDown/>
-                )}
+                {expanded === experience.id ? <ChevronUp /> : <ChevronDown />}
               </button>
             </div>
           </div>
