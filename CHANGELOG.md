@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.2.0...v0.2.1) (2025-01-29)
+
+
+### Bug Fixes
+
+* **seo:** :ambulance: Update canonical and SEO configuration ([#16](https://github.com/bmmedina99/porfolio-bmmedina/issues/16)) ([23b341c](https://github.com/bmmedina99/porfolio-bmmedina/commit/23b341c57f9de5dce5fe4b7411df3a7929651802))
+
 # [0.2.0](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.1.0...v0.2.0) (2025-01-29)
 
 
