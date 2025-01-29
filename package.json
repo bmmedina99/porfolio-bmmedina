@@ -11,6 +11,10 @@
     "fmt": "pnpm biome format --write .",
     "lint": "pnpm biome lint --write ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmmedina99/porfolio-bmmedina.git"
+  },
   "dependencies": {
     "@astrojs/react": "4.1.5",
     "@astrojs/tailwind": "5.1.4",

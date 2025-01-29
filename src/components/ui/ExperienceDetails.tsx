@@ -8,7 +8,7 @@ export default function ExperienceDetails() {
   const handleExpand = (id: number) => setExpanded(expanded === id ? -1 : id)
 
   return (
-    <div className='flex flex-col-reverse relative'>
+    <div className='relative flex flex-col-reverse'>
       {EXPERIENCES.map((experience) => (
         <article key={experience.id}>
           <div
@@ -18,10 +18,10 @@ export default function ExperienceDetails() {
           >
             <div className='flex items-center justify-between '>
               <div className='text-start'>
-                <p className='text-lg font-semibold tracking-wide'>
+                <h2 className='text-lg font-semibold tracking-wide'>
                   <span className='text-[#c084fc]'>{experience.title}</span>{' '}
                   &bull; {experience.company}
-                </p>
+                </h2>
                 <p className='text-sm tracking-wide'>
                   {experience.startDate} - {experience.endDate}
                 </p>
@@ -31,9 +31,9 @@ export default function ExperienceDetails() {
                 className='text-[#c084fc] cursor-pointer'
               >
                 {expanded === experience.id ? (
-                  <ChevronUp title='Contraer' />
+                  <ChevronUp/>
                 ) : (
-                  <ChevronDown title='Expandir' />
+                  <ChevronDown/>
                 )}
               </button>
             </div>
@@ -43,7 +43,7 @@ export default function ExperienceDetails() {
           >
             <div className='mx-[-20px] p-6'>
               <div className='bg-[#3f007d]/60 border border-[#12042d] rounded-md p-4'>
-                <ul className='list-disc pl-4 mb-4 text-pretty'>
+                <ul className='pl-4 mb-4 list-disc text-pretty'>
                   {experience.description.map((desc) => (
                     <li
                       key={desc}

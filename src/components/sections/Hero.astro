@@ -5,34 +5,29 @@ import Navbar from '../ui/Navbar'
 
 <section
   id="home"
-  class="relative flex flex-col items-center justify-center w-full min-h-screen"
-  arial-label="Inicio"
+  class="relative flex flex-col items-center justify-center min-h-screen"
 >
-  <div class="z-10 flex flex-col h-dvh">
-    <header class="flex flex-col justify-center flex-grow gap-5 text-center">
-      <h1 class="text-5xl sm:text-[6vw] font-bold uppercase">Brandon Medina</h1>
-      <h2 class="text-xl font-medium uppercase text-pretty">
-        Desarrollador Web
-        <span class="gradient-text">Full Stack</span>,
-        <span class="text-[#22d2f0]">Frontend</span> &amp;
-        <span class="text-[#00ffaa]">Backend</span>
-      </h2>
-      <Navbar client:load />
-    </header>
-    <div class="flex items-center justify-center pb-12 animate-bounce">
-      <button
-        type="button"
-        class="flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0]"
-        aria-label="Ir a la sección de experiencia"
-        onclick="document.getElementById('#experiencia').scrollIntoView({ behavior: 'smooth' })"
-      >
-        <ChevronDown title="Ir al inicio" />
-      </button>
-    </div>
-  </div>
   <div
     class="absolute overflow-hidden w-[600px] h-[600px] bg-gradient-to-br from-[#2a0e61]/60 to-transparent blur-3xl rounded-full animate-pulse"
     aria-hidden="true"
   >
   </div>
+  <div class="z-10 px-4 mb-4 space-y-6 text-center uppercase">
+    <h1 class="text-5xl font-bold md:text-7xl">Brandon Medina</h1>
+    <p class="text-lg font-medium md:text-xl text-pretty">
+      Desarrollador Web
+      <strong class="gradient-text">Full Stack</strong>,
+      <strong class="text-[#22d2f0]">Frontend</strong> &amp;
+      <strong class="text-[#00ffaa]">Backend</strong>
+    </p>
+  </div>
+  <Navbar client:load />
+  <button
+    type="button"
+    class="absolute bottom-8 z-10 flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0] animate-bounce"
+    aria-label="Ir a la sección de experiencia"
+    onclick="document.querySelector('#experiencia').scrollIntoView({ behavior: 'smooth' })"
+  >
+    <ChevronDown />
+  </button>
 </section>
