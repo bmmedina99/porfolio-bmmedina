@@ -1,4 +1,4 @@
-export const ChevronUp = ({ title }: { title: string }) => {
+export const ChevronUp = () => {
   return (
     <svg
       width={24}
@@ -10,7 +10,6 @@ export const ChevronUp = ({ title }: { title: string }) => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <title>{title}</title>
       <path
         stroke='none'
         d='M0 0h24v24H0z'
@@ -21,7 +20,7 @@ export const ChevronUp = ({ title }: { title: string }) => {
   )
 }
 
-export const ChevronDown = ({ title }: { title: string }) => {
+export const ChevronDown = () => {
   return (
     <svg
       width={24}
@@ -33,7 +32,6 @@ export const ChevronDown = ({ title }: { title: string }) => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <title>{title}</title>
       <path
         stroke='none'
         d='M0 0h24v24H0z'
@@ -56,7 +54,6 @@ export const Menu = () => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <title>Menu</title>
       <path
         stroke='none'
         d='M0 0h24v24H0z'
@@ -81,7 +78,6 @@ export const Close = () => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <title>Cerrar</title>
       <path
         stroke='none'
         d='M0 0h24v24H0z'
@@ -105,7 +101,6 @@ export const Location = () => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <title>Ubicación</title>
       <path
         stroke='none'
         d='M0 0h24v24H0z'
@@ -128,7 +123,6 @@ export const Website = () => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <title>Sitio Web</title>
       <path
         stroke='none'
         d='M0 0h24v24H0z'
