@@ -1,5 +1,5 @@
 ---
-import { ChevronDown } from '../icons/Iconbase'
+import Icon from '../ui/Icon'
 import Navbar from '../ui/Navbar'
 ---
 
@@ -12,9 +12,9 @@ import Navbar from '../ui/Navbar'
     aria-hidden="true"
   >
   </div>
-  <div class="z-10 px-4 space-y-6 text-center">
+  <div class="z-10 px-4 text-center">
     <h1 class="text-5xl font-bold uppercase md:text-7xl">Brandon Medina</h1>
-    <p class="text-lg font-medium uppercase md:text-xl text-pretty">
+    <p class="text-lg font-medium uppercase md:text-xl text-pretty my-4">
       Desarrollador Web
       <strong class="gradient-text">Full Stack</strong>,
       <strong class="text-[#22d2f0]">Frontend</strong> &amp;
@@ -24,10 +24,10 @@ import Navbar from '../ui/Navbar'
   </div>
   <button
     type="button"
-    class="absolute bottom-8 z-10 flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0] animate-bounce"
+    class="absolute bottom-8 flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0] animate-bounce"
     aria-label="Ir a la sección de experiencia"
     onclick="document.querySelector('#experiencia').scrollIntoView({ behavior: 'smooth' })"
   >
-    <ChevronDown />
+    <Icon name="scroll-down" />
   </button>
 </section>
