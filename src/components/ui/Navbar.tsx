@@ -1,7 +1,7 @@
 import { NAV_ITEMS } from '@/constants'
 import { capitalLetter, scrollToTop, slugify } from '@/utils'
 import { useEffect, useRef, useState } from 'react'
-import { ChevronUp, Close, Menu } from '../icons/Iconbase'
+import Icon from './Icon'
 
 export default function Navbar() {
   const [initialOffsetTop, setInitialOffsetTop] = useState<number | null>(null)
@@ -46,7 +46,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`flex items-center w-full h-[65px] select-none z-50 mt-4 ${isNavbarFixed ? 'fixed top-0 right-0' : 'relative'}`}
+      className={`flex items-center w-full h-[65px] select-none z-50 ${isNavbarFixed ? 'fixed top-0 right-0' : 'relative'}`}
     >
       <div className='max-w-7xl mx-auto flex justify-center items-center backdrop-blur-md rounded-full px-8 py-4 bg-[#030014]/60 shadow-lg shadow-[#2a0e61]/60 border border-[#7042f8]/40'>
         <ul className='hidden gap-8 md:flex'>
@@ -69,7 +69,7 @@ export default function Navbar() {
           onClick={() => setIsMenuOpen(true)}
           aria-label='Abrir menu'
         >
-          <Menu />
+          <Icon name='menu' />
         </button>
       </div>
       <div
@@ -81,7 +81,7 @@ export default function Navbar() {
           onClick={() => setIsMenuOpen(false)}
           aria-label='Cerrar menu'
         >
-          <Close />
+          <Icon name='menu-close' />
         </button>
         <ul className='flex flex-col gap-4 p-4'>
           {NAV_ITEMS.map((item) => (
@@ -103,7 +103,7 @@ export default function Navbar() {
         className={`fixed bottom-6 right-6 text-[#22d2f0] border border-[#22d2f0] shadow-lg shadow-[#22d2f0]/50 rounded-full p-3 transition-opacity duration-300 z-20 ${isShowScrollTop ? 'visible opacity-100' : 'invisible opacity-0'}`}
         onClick={scrollToTop}
       >
-        <ChevronUp />
+        <Icon name='scroll-up' />
       </button>
     </nav>
   )
