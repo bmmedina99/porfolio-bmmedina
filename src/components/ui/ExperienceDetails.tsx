@@ -1,6 +1,6 @@
 import { EXPERIENCES } from '@/constants'
 import { useState } from 'react'
-import { ChevronDown, ChevronUp, Location, Website } from '../icons/Iconbase'
+import Icon from './Icon'
 
 export default function ExperienceDetails() {
   const [expanded, setExpanded] = useState(EXPERIENCES.length - 1)
@@ -28,12 +28,13 @@ export default function ExperienceDetails() {
               </div>
               <button
                 type='button'
+                aria-label={`${expanded === experience.id ? 'Contraer' : 'Expandir'} ${experience.title}`}
                 className='text-[#c084fc] cursor-pointer'
               >
                 {expanded === experience.id ? (
-                  <ChevronUp/>
+                  <Icon name='menu-collapse' />
                 ) : (
-                  <ChevronDown/>
+                  <Icon name='menu-expand' />
                 )}
               </button>
             </div>
@@ -72,7 +73,7 @@ export default function ExperienceDetails() {
                       {detail.link ? (
                         <p className=' flex items-center gap-2 text-[#22d2f0]'>
                           <span>
-                            <Website />
+                            <Icon name='website' />
                           </span>
                           <a
                             href={detail.link}
@@ -85,7 +86,7 @@ export default function ExperienceDetails() {
                       ) : (
                         <p className='flex items-center gap-2 text-[#00ffaa]'>
                           <span>
-                            <Location />
+                            <Icon name='location' />
                           </span>
                           <span>{detail.text}</span>
                         </p>

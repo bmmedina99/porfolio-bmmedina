@@ -16,22 +16,26 @@
     "url": "https://github.com/bmmedina99/porfolio-bmmedina.git"
   },
   "dependencies": {
-    "@astrojs/react": "4.1.5",
+    "@astrojs/react": "4.2.0",
+    "@astrojs/sitemap": "3.2.1",
     "@astrojs/tailwind": "5.1.4",
-    "astro": "5.1.7",
+    "astro": "5.2.1",
+    "astro-robots-txt": "1.0.0",
+    "astro-seo-schema": "5.0.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "semantic-release": "24.2.1",
-    "@semantic-release/npm": "12.0.1",
-    "@semantic-release/git": "10.0.1",
     "@semantic-release/changelog": "6.0.3",
-    "@types/react": "19.0.7",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/npm": "12.0.1",
+    "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
+    "schema-dts": "1.1.2",
     "autoprefixer": "10.4.20",
     "postcss": "8.5.1",
+    "semantic-release": "24.2.1",
     "tailwindcss": "3.4.17",
     "typescript": "5.7.3"
   },

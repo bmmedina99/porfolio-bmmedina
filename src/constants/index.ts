@@ -80,7 +80,7 @@ export const EXPERIENCES: Experience[] = [
       { text: 'Remoto' },
       {
         text: 'graygorillafitness.com',
-        link: 'https://graygorillafitness.com',
+        link: '#',
       },
     ],
   },
