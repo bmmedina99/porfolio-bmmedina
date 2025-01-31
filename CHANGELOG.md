@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.0...v0.3.1) (2025-01-31)
+
+
+### Bug Fixes
+
+* **performance:** :bug: Reduce unused JS to optimize loading ([24580fc](https://github.com/bmmedina99/porfolio-bmmedina/commit/24580fc3990d1c24cb8f240031a61dc18c6dfdd6))
+
 # [0.3.0](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.2.1...v0.3.0) (2025-01-31)
 
 
