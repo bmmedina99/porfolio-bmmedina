@@ -1,3 +1,17 @@
+# [0.3.0](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.2.1...v0.3.0) (2025-01-31)
+
+
+### Bug Fixes
+
+* **accesibility:** :wrench: Add aria-label to buttons in ExperienceDetails ([ae9b07f](https://github.com/bmmedina99/porfolio-bmmedina/commit/ae9b07f7cfcb1b01edb85452ab773d595aed2185))
+* **experience:** :bug: Resolve broken link in experience section ([19721af](https://github.com/bmmedina99/porfolio-bmmedina/commit/19721af010c8178be2803fcede6c1ea3ecd1f847))
+* **hero:** :bug: Resolve invalid element nesting issue in Hero Section ([91fc6b7](https://github.com/bmmedina99/porfolio-bmmedina/commit/91fc6b780f8feb8118562b24d8d5f9c679a0a951))
+
+
+### Features
+
+* **seo:** :sparkles: Improve SEO and enhance accessibility ([#19](https://github.com/bmmedina99/porfolio-bmmedina/issues/19)) ([2a737d7](https://github.com/bmmedina99/porfolio-bmmedina/commit/2a737d78b638cf0c7c0909654a83cd1c7573caab))
+
 ## [0.2.1](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.2.0...v0.2.1) (2025-01-29)
 
 
