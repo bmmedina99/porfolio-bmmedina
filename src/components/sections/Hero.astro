@@ -5,7 +5,7 @@ import Navbar from '../ui/Navbar'
 
 <section
   id="home"
-  class="relative flex flex-col items-center justify-center min-h-screen"
+  class="relative flex flex-col items-center justify-center min-h-dvh"
 >
   <div
     class="absolute overflow-hidden w-[600px] h-[600px] bg-gradient-to-br from-[#2a0e61]/60 to-transparent blur-3xl rounded-full animate-pulse"
@@ -14,7 +14,11 @@ import Navbar from '../ui/Navbar'
   </div>
   <div class="z-10 px-4 text-center">
     <h1 class="text-5xl font-bold uppercase md:text-7xl">Brandon Medina</h1>
-    <p class="text-lg font-medium uppercase md:text-xl text-pretty my-4">
+    <p
+      class="text-lg font-medium uppercase md:text-xl text-pretty my-4"
+      role="heading"
+      aria-level="2"
+    >
       Desarrollador Web
       <strong class="gradient-text">Full Stack</strong>,
       <strong class="text-[#22d2f0]">Frontend</strong> &amp;
