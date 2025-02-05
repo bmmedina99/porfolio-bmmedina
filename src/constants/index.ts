@@ -1,5 +1,7 @@
 import type { Experience } from '@/types'
 
+export const SCROLL_OFFSET = 96
+
 export const NAV_ITEMS = [
   { id: '01', label: 'experiencia' },
   { id: '02', label: 'proyectos' },

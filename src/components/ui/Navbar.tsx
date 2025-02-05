@@ -1,47 +1,44 @@
-import { NAV_ITEMS } from '@/constants'
+import { NAV_ITEMS, SCROLL_OFFSET } from '@/constants'
 import { capitalLetter, scrollToTop, slugify } from '@/utils'
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Icon from './Icon'
 
 export default function Navbar() {
-  const [initialOffsetTop, setInitialOffsetTop] = useState<number | null>(null)
   const [isShowScrollTop, setIsShowScrollTop] = useState(false)
   const [isNavbarFixed, setIsNavbarFixed] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [active, setActive] = useState('home')
+  const initialOffsetTop = useRef<number | null>(null)
   const navRef = useRef<HTMLElement>(null)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navTop = navRef.current?.offsetTop ?? 0
+  const handleScroll = useCallback(() => {
+    const navTop = navRef.current?.offsetTop ?? 0
 
-      if (!initialOffsetTop) setInitialOffsetTop(navTop)
+    if (initialOffsetTop.current === null) initialOffsetTop.current = navTop
 
-      setIsMenuOpen(false)
-      setIsNavbarFixed(window.scrollY >= (initialOffsetTop || 0))
+    setIsMenuOpen(false)
+    setIsNavbarFixed(window.scrollY >= (initialOffsetTop.current || 0))
+    setIsShowScrollTop(window.scrollY > window.innerHeight - SCROLL_OFFSET)
 
-      let currentActiveSection = 'home'
-      for (const item of NAV_ITEMS) {
-        const section = document.querySelector(`#${slugify(item.label)}`)
-
-        if (
-          section &&
-          window.scrollY >=
-            section.getBoundingClientRect().top + window.scrollY - 96
-        )
+    let currentActiveSection = 'home'
+    for (const item of NAV_ITEMS) {
+      const section = document.getElementById(slugify(item.label))
+      if (section) {
+        const sectionTop =
+          section.getBoundingClientRect().top + window.scrollY - SCROLL_OFFSET
+        if (window.scrollY >= sectionTop) {
           currentActiveSection = item.label
-
-        setActive(currentActiveSection)
-        setIsShowScrollTop(window.scrollY > window.innerHeight - 96)
+        }
       }
     }
+    setActive(currentActiveSection)
+  }, [])
 
-    window.addEventListener('scroll', handleScroll)
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [initialOffsetTop])
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [handleScroll])
 
   return (
     <nav
