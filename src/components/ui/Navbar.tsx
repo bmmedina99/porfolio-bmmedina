@@ -43,6 +43,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
+      aria-label='Navegación principal'
       className={`flex items-center w-full h-[65px] select-none z-50 ${isNavbarFixed ? 'fixed top-0 right-0' : 'relative'}`}
     >
       <div className='max-w-7xl mx-auto flex justify-center items-center backdrop-blur-md rounded-full px-8 py-4 bg-[#030014]/60 shadow-lg shadow-[#2a0e61]/60 border border-[#7042f8]/40'>
@@ -63,14 +64,18 @@ export default function Navbar() {
         <button
           type='button'
           className='md:hidden text-[#22d2f0]'
-          onClick={() => setIsMenuOpen(true)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label='Abrir menu'
+          aria-expanded={isMenuOpen}
         >
           <Icon name='menu' />
         </button>
       </div>
+
       <div
         className={`md:hidden fixed top-0 right-0 w-64 h-full bg-[#030014]/60 backdrop-blur-md shadow-lg shadow-[#2a0e61]/60 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        aria-modal='true'
+        aria-label='Menú de navegación'
       >
         <button
           type='button'
@@ -95,8 +100,10 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
+
       <button
         type='button'
+        aria-label='Volver al inicio'
         className={`fixed bottom-6 right-6 text-[#22d2f0] border border-[#22d2f0] shadow-lg shadow-[#22d2f0]/50 rounded-full p-3 transition-opacity duration-300 z-20 ${isShowScrollTop ? 'visible opacity-100' : 'invisible opacity-0'}`}
         onClick={scrollToTop}
       >
