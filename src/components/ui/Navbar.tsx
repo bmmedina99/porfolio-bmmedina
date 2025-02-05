@@ -1,51 +1,49 @@
-import { NAV_ITEMS } from '@/constants'
+import { NAV_ITEMS, SCROLL_OFFSET } from '@/constants'
 import { capitalLetter, scrollToTop, slugify } from '@/utils'
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Icon from './Icon'
 
 export default function Navbar() {
-  const [initialOffsetTop, setInitialOffsetTop] = useState<number | null>(null)
   const [isShowScrollTop, setIsShowScrollTop] = useState(false)
   const [isNavbarFixed, setIsNavbarFixed] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [active, setActive] = useState('home')
+  const initialOffsetTop = useRef<number | null>(null)
   const navRef = useRef<HTMLElement>(null)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navTop = navRef.current?.offsetTop ?? 0
+  const handleScroll = useCallback(() => {
+    const navTop = navRef.current?.offsetTop ?? 0
 
-      if (!initialOffsetTop) setInitialOffsetTop(navTop)
+    if (initialOffsetTop.current === null) initialOffsetTop.current = navTop
 
-      setIsMenuOpen(false)
-      setIsNavbarFixed(window.scrollY >= (initialOffsetTop || 0))
+    setIsMenuOpen(false)
+    setIsNavbarFixed(window.scrollY >= (initialOffsetTop.current || 0))
+    setIsShowScrollTop(window.scrollY > window.innerHeight - SCROLL_OFFSET)
 
-      let currentActiveSection = 'home'
-      for (const item of NAV_ITEMS) {
-        const section = document.querySelector(`#${slugify(item.label)}`)
-
-        if (
-          section &&
-          window.scrollY >=
-            section.getBoundingClientRect().top + window.scrollY - 96
-        )
+    let currentActiveSection = 'home'
+    for (const item of NAV_ITEMS) {
+      const section = document.getElementById(slugify(item.label))
+      if (section) {
+        const sectionTop =
+          section.getBoundingClientRect().top + window.scrollY - SCROLL_OFFSET
+        if (window.scrollY >= sectionTop) {
           currentActiveSection = item.label
-
-        setActive(currentActiveSection)
-        setIsShowScrollTop(window.scrollY > window.innerHeight - 96)
+        }
       }
     }
+    setActive(currentActiveSection)
+  }, [])
 
-    window.addEventListener('scroll', handleScroll)
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [initialOffsetTop])
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [handleScroll])
 
   return (
     <nav
       ref={navRef}
+      aria-label='Navegación principal'
       className={`flex items-center w-full h-[65px] select-none z-50 ${isNavbarFixed ? 'fixed top-0 right-0' : 'relative'}`}
     >
       <div className='max-w-7xl mx-auto flex justify-center items-center backdrop-blur-md rounded-full px-8 py-4 bg-[#030014]/60 shadow-lg shadow-[#2a0e61]/60 border border-[#7042f8]/40'>
@@ -66,14 +64,18 @@ export default function Navbar() {
         <button
           type='button'
           className='md:hidden text-[#22d2f0]'
-          onClick={() => setIsMenuOpen(true)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label='Abrir menu'
+          aria-expanded={isMenuOpen}
         >
           <Icon name='menu' />
         </button>
       </div>
+
       <div
         className={`md:hidden fixed top-0 right-0 w-64 h-full bg-[#030014]/60 backdrop-blur-md shadow-lg shadow-[#2a0e61]/60 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        aria-modal='true'
+        aria-label='Menú de navegación'
       >
         <button
           type='button'
@@ -98,8 +100,10 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
+
       <button
         type='button'
+        aria-label='Volver al inicio'
         className={`fixed bottom-6 right-6 text-[#22d2f0] border border-[#22d2f0] shadow-lg shadow-[#22d2f0]/50 rounded-full p-3 transition-opacity duration-300 z-20 ${isShowScrollTop ? 'visible opacity-100' : 'invisible opacity-0'}`}
         onClick={scrollToTop}
       >
