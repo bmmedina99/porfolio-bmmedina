@@ -1,3 +1,17 @@
+## [0.3.2](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.1...v0.3.2) (2025-02-05)
+
+
+### Bug Fixes
+
+* **hero:** :mag: Improve HTML semantics for better SEO in Hero component ([dc9418e](https://github.com/bmmedina99/porfolio-bmmedina/commit/dc9418eeee7b37e5a3a5fa7ea2399607e590a730))
+* **hero:** :zap: Optimize JS loading in Hero component ([ab1ff5e](https://github.com/bmmedina99/porfolio-bmmedina/commit/ab1ff5e97e4694f8b989a50d4c1eb4663a7e5a76))
+* **navbar:** :bug: Resolve jumping issue by setting initial state ([0182b39](https://github.com/bmmedina99/porfolio-bmmedina/commit/0182b3954eed23adf778eff0cdecd8cfcf0fb6e1))
+
+
+### Performance Improvements
+
+* **navbar:** :zap: Improve performance of Navbar component ([b60a0e5](https://github.com/bmmedina99/porfolio-bmmedina/commit/b60a0e5dbee826992927f93f895c23bde8e8ed3e))
+
 ## [0.3.1](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.0...v0.3.1) (2025-01-31)
 
 
