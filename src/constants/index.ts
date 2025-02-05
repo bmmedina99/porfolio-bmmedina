@@ -28,7 +28,7 @@ export const EXPERIENCES: Experience[] = [
       'Optimización de procesos',
       'Comunicación técnica efectiva',
     ],
-    location: 'Magallanes, Madrid',
+    location: 'Madrid',
     website: {
       text: 'empresariosagrupados.es',
       link: 'https://www.empresariosagrupados.es',
@@ -52,7 +52,7 @@ export const EXPERIENCES: Experience[] = [
       'Optimización con SFTP',
       'Resolución de problemas técnicos',
     ],
-    location: 'Nuevos Ministerios, Madrid',
+    location: 'Madrid',
     website: { text: 'amat.es', link: 'https://www.amat.es' },
   },
   {
@@ -94,7 +94,7 @@ export const EXPERIENCES: Experience[] = [
       'Toma de decisiones críticas',
       'Liderazgo en turno rotativo',
     ],
-    location: 'Tres Cantos, Madrid',
+    location: 'Madrid',
     website: { text: 'izertis.com', link: 'https://www.izertis.com/es/' },
   },
 ]
