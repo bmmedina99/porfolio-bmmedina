@@ -28,13 +28,11 @@ export const EXPERIENCES: Experience[] = [
       'Optimización de procesos',
       'Comunicación técnica efectiva',
     ],
-    details: [
-      { text: 'Magallanes, Madrid' },
-      {
-        text: 'empresariosagrupados.es',
-        link: 'https://www.empresariosagrupados.es',
-      },
-    ],
+    location: 'Madrid',
+    website: {
+      text: 'empresariosagrupados.es',
+      link: 'https://www.empresariosagrupados.es',
+    },
   },
   {
     id: 1,
@@ -54,10 +52,8 @@ export const EXPERIENCES: Experience[] = [
       'Optimización con SFTP',
       'Resolución de problemas técnicos',
     ],
-    details: [
-      { text: 'Nuevos Ministerios, Madrid' },
-      { text: 'amat.es', link: 'https://www.amat.es' },
-    ],
+    location: 'Madrid',
+    website: { text: 'amat.es', link: 'https://www.amat.es' },
   },
   {
     id: 2,
@@ -78,13 +74,7 @@ export const EXPERIENCES: Experience[] = [
       'Resolución autónoma',
       'Integración con Amazon FBA',
     ],
-    details: [
-      { text: 'Remoto' },
-      {
-        text: 'graygorillafitness.com',
-        link: '#',
-      },
-    ],
+    location: 'Remoto',
   },
   {
     id: 3,
@@ -104,9 +94,7 @@ export const EXPERIENCES: Experience[] = [
       'Toma de decisiones críticas',
       'Liderazgo en turno rotativo',
     ],
-    details: [
-      { text: 'Tres Cantos, Madrid' },
-      { text: 'izertis.com', link: 'https://www.izertis.com/es/' },
-    ],
+    location: 'Madrid',
+    website: { text: 'izertis.com', link: 'https://www.izertis.com/es/' },
   },
 ]

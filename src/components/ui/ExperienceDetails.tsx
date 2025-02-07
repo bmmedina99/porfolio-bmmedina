@@ -65,34 +65,30 @@ export default function ExperienceDetails() {
                   ))}
                 </ul>
                 <ul className='flex flex-wrap gap-4'>
-                  {experience.details.map((detail) => (
-                    <li
-                      key={detail.text}
-                      className='flex items-center gap-2'
-                    >
-                      {detail.link ? (
-                        <p className=' flex items-center gap-2 text-[#22d2f0]'>
-                          <span>
-                            <Icon name='website' />
-                          </span>
-                          <a
-                            href={detail.link}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                          >
-                            {detail.text}
-                          </a>
-                        </p>
-                      ) : (
-                        <p className='flex items-center gap-2 text-[#00ffaa]'>
-                          <span>
-                            <Icon name='location' />
-                          </span>
-                          <span>{detail.text}</span>
-                        </p>
-                      )}
+                  <li>
+                    <p className='flex items-center gap-2 text-[#00ffaa]'>
+                      <span>
+                        <Icon name='location' />
+                      </span>
+                      <span>{experience.location}</span>
+                    </p>
+                  </li>
+                  {experience.website && (
+                    <li>
+                      <p className=' flex items-center gap-2 text-[#22d2f0]'>
+                        <span>
+                          <Icon name='website' />
+                        </span>
+                        <a
+                          href={experience.website.link}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          {experience.website.text}
+                        </a>
+                      </p>
                     </li>
-                  ))}
+                  )}
                 </ul>
               </div>
             </div>
