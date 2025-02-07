@@ -40,7 +40,7 @@ export default function ExperienceDetails() {
             </div>
           </div>
           <div
-            className={`${expanded === experience.id ? 'max-h-[600px]' : 'max-h-2.5'} overflow-hidden transition-[max-height] duration-300 ease-in-out`}
+            className={`${expanded === experience.id ? 'max-h-[1280px]' : 'max-h-2.5'} overflow-hidden transition-[max-height] duration-300 ease-in-out`}
           >
             <div className='mx-[-20px] p-6'>
               <div className='bg-[#3f007d]/60 border border-[#12042d] rounded-md p-4'>

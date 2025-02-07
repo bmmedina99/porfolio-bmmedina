@@ -17,9 +17,10 @@ export const EXPERIENCES: Experience[] = [
     startDate: 'Mar. 2019',
     endDate: 'Ago. 2019',
     description: [
-      'Resolución de problemas técnicos en equipos de usuarios y administración de inventarios de hardware/software mediante Lansweeper.',
-      'Optimización de procesos, logrando reducir el tiempo de resolución de tareas críticas a la mitad de lo solicitado.',
-      'Experiencia en gestión de actualizaciones y parches en red mediante WSUS, asegurando el correcto funcionamiento de los equipos.',
+      'Logré agilizar el trabajo y reducir el tiempo a la mitad de lo solicitado, optimizando los procesos y mejorando la productividad del equipo.',
+      'Proveía asistencia técnica a los usuarios de la empresa, resolviendo problemas informáticos en sus equipos y actualizando programas.',
+      'Relizaba seguimiento y análisis de los equipos de la empresa para garantizar su correcto funcionamiento y mantenimiento.',
+      'Hacía uso de los programas Lansweeper y WSUS para gestionar eficiente el inventario de hardware y software, así como para la aplicación de parches y actualizaciones en la red.',
     ],
     technologies: [
       'WSUS',
@@ -41,9 +42,9 @@ export const EXPERIENCES: Experience[] = [
     startDate: 'Nov. 2021',
     endDate: 'Feb. 2022',
     description: [
-      'Desarrollo de un programa en Python para extraer datos blob y convertirlos a formatos de archivo estándar (PNG, JPG, PDF).',
-      'Automatización del proceso de transferencia de archivos al servidor mediante SFTP, mejorando significativamente la eficiencia operativa.',
-      'Uso de bases de datos para la manipulación y extracción de datos, aplicando principios de programación robusta y eficiente.',
+      'Gestioné datos mediante las herramientas de Qlik Sense y Qlik View, además del desarrollo de funciones específicas para visualizar los datos de forma concreta.',
+      'Desarrollé un programa en Python para extraer datos blob de una base de datos específica y convertirlos a formatos de archivo (PNG, JPG, PDF).',
+      'Automaticé el proceso de transferencia de archivos al servidor a través de SFTP, mejorando la productividad reduciendo 2 horas.',
     ],
     technologies: [
       'Python',
@@ -64,7 +65,6 @@ export const EXPERIENCES: Experience[] = [
     description: [
       'Desarrollé una página web personalizada para una compañía de accesorios de gimnasio que trabajaba con Amazon FBA.',
       'Implementé una interfaz clara y funcional para mostrar los productos, con redirección directa a Amazon para la compra, mejorando la experiencia del usuario.',
-      'Colaboré con los propietarios para entender sus necesidades y proporcionar una solución ajustada a sus objetivos comerciales.',
     ],
     technologies: [
       'HTML',
@@ -83,9 +83,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: 'Jul. 2022',
     endDate: 'Presente',
     description: [
-      'Desarrollé una extensión para mejorar la eficiencia de una tarea específica del servicio, demostrando capacidad para identificar problemas y crear soluciones prácticas.',
-      'Registro y análisis de incidencias en herramientas como BMC Remedy, contribuyendo a mejorar la base de conocimiento del equipo.',
-      'Colaboración con diferentes departamentos, comunicando de manera clara y efectiva para resolver problemas críticos.',
+      'Toma de decisiones sobre escalado de incidencias, contactando con las respectivas guardias según la criticidad de los problemas detectados.',
+      'Desarrollé un programa para mejorar la eficiencia de una tarea específica del servicio, reduciendo así el tiempo de 1 hora a 15 min.',
+      'Monitoreo aplicaciones bajo monitores transaccionales Tuxedo y servidores de aplicaciones.',
+      'Registro detallado de problemas y soluciones en herramientas de ticketing usando BMC Remedy, contribuyendo a la base de conocimiento del equipo.',
+      'Capacidad para trabajar en equipo, comunicando de manera clara y efectiva con diferentes departamentos.',
     ],
     technologies: [
       'Control-M',
