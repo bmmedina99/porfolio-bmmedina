@@ -12,22 +12,31 @@ import Navbar from '../ui/Navbar'
     aria-hidden="true"
   >
   </div>
-  <header class="z-10 px-4 text-center uppercase text-balance">
+  <header class="z-10 px-4 text-center uppercase text-balance" role="banner">
     <h1 class="text-5xl font-bold md:text-7xl">Brandon Medina</h1>
-    <h2 class="text-lg font-medium md:text-xl my-4">
-      Desarrollador Web
-      <strong class="gradient-text">FullStack</strong>,
-      <strong class="text-[#22d2f0]">Frontend</strong> &amp;
-      <strong class="text-[#00ffaa]">Backend</strong>
+    <h2 class="my-4 text-lg font-medium md:text-xl">
+      Desarrollador Web&nbsp;
+      <span class="gradient-text">Full Stack</span>,
+      <span class="text-[#22d2f0]">Frontend</span> &amp;
+      <span class="text-[#00ffaa]">Backend</span>
     </h2>
   </header>
   <Navbar client:visible />
   <button
+    id="scrollDown"
     type="button"
     class="absolute bottom-8 flex items-center w-6 h-10 rounded-full border-2 border-[#22d2f0] animate-bounce"
     aria-label="Ir a la sección de experiencia"
-    onclick="document.querySelector('#experiencia').scrollIntoView({ behavior: 'smooth' })"
   >
     <Icon name="scroll-down" />
   </button>
 </section>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const scrollDownBtn = document.querySelector('#scrollDown')
+    scrollDownBtn?.addEventListener('click', () => {
+      const experience = document.querySelector('#experiencia')
+      experience?.scrollIntoView({ behavior: 'smooth' })
+    })
+  })
+</script>
