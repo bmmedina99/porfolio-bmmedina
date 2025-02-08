@@ -1,5 +1,5 @@
 import { NAV_ITEMS, SCROLL_OFFSET } from '@/constants'
-import { capitalLetter, scrollToTop, slugify } from '@/utils'
+import { capitalLetter, scrollSection, scrollToTop, slugify } from '@/utils'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Icon from './Icon'
 
@@ -50,14 +50,15 @@ export default function Navbar() {
         <ul className='hidden gap-8 md:flex'>
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>
-              <a
-                href={`#${slugify(item.label)}`}
+              <button
+                type='button'
                 className={`flex items-center gap-2 hover:text-[#22d2f0] transition-colors ${active === item.label ? 'text-[#22d2f0]' : 'text-[#f6f6f6]'}`}
+                onClick={() => scrollSection(`#${slugify(item.label)}`)}
               >
                 <span className='text-sm opacity-50'>&lt;</span>
                 <span className='text-lg'>{capitalLetter(item.label)}</span>
                 <span className='text-sm opacity-50'>/&gt;</span>
-              </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -88,14 +89,15 @@ export default function Navbar() {
         <ul className='flex flex-col gap-4 p-4'>
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>
-              <a
-                href={`#${slugify(item.label)}`}
+              <button
+                type='button'
                 className={`flex items-center gap-2 hover:text-[#22d2f0] transition-colors ${active === item.label ? 'text-[#22d2f0]' : 'text-[#f6f6f6]'}`}
+                onClick={() => scrollSection(`#${slugify(item.label)}`)}
               >
                 <span className='text-lg'>
                   {capitalLetter(slugify(item.label))}.tsx
                 </span>
-              </a>
+              </button>
             </li>
           ))}
         </ul>
