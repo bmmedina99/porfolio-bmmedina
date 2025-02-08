@@ -54,8 +54,11 @@ export default function ExperienceDetails() {
               <div className='bg-[#3f007d]/60 border border-[#12042d] rounded-md p-4'>
                 <ul className='pl-4 mb-4 list-disc'>
                   {experience.description.map((desc) => (
-                    <li key={desc}>
-                      <p className='text-[#cbd5e1]'>{desc}</p>
+                    <li
+                      key={desc}
+                      className='text-[#cbd5e1] text-pretty'
+                    >
+                      <p>{desc}</p>
                     </li>
                   ))}
                 </ul>
