@@ -18,6 +18,10 @@ html {
    @apply bg-gradient-to-b from-[#c084fc] via-[#22d2f0] to-[#00ffaa] rounded-md border-4 border-solid border-[#030014]
 }
 
+.main-section {
+  @apply relative px-6 mt-24 mb-36 md:px-12
+}
+
 .gradient-text {
   @apply bg-gradient-to-r from-[#c084fc] via-[#22d2f0] to-[#00ffaa] text-transparent bg-clip-text tracking-wide
 }
