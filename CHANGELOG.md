@@ -1,3 +1,10 @@
+## [0.3.3](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.2...v0.3.3) (2025-02-08)
+
+
+### Performance Improvements
+
+* **experience:** :zap: Optimize component for better performance ([426af03](https://github.com/bmmedina99/porfolio-bmmedina/commit/426af031b26c3f3afabc1002c978d2e6c7d82828))
+
 ## [0.3.2](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.1...v0.3.2) (2025-02-05)
 
 
