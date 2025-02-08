@@ -1,0 +1,18 @@
+---
+const { name, label } = Astro.props
+---
+
+<section
+  id={name}
+  aria-label={label}
+  class="main-section"
+>
+  <div class="z-10 max-w-4xl mx-auto">
+    <header class="mb-10 text-center">
+      <h2 class="text-[#6347ff] text-5xl font-semibold tracking-wide uppercase">
+        {name}
+      </h2>
+    </header>
+    <slot />
+  </div>
+</section>

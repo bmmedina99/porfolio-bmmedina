@@ -1,19 +1,9 @@
 ---
+import Section from '../Section.astro'
 import ExperienceDetails from '../ui/ExperienceDetails'
 ---
-
-<section
-  id="experiencia"
-  aria-label="Experiencia profesional"
-  class="main-section"
->
-  <div class="z-10 max-w-4xl mx-auto">
-    <header class="mb-10 text-center">
-      <h2 class="text-[#6347ff] text-5xl font-semibold tracking-wide uppercase">
-        Experiencia
-      </h2>
-    </header>
-    <ExperienceDetails client:visible />
+<Section name="Experiencia" label="Experiencia profesional">
+  <ExperienceDetails client:visible />
     <img
       src="/assets/svg/tech-skills-orbit.svg"
       alt="Ilustración de habilidades técnicas"
@@ -23,5 +13,4 @@ import ExperienceDetails from '../ui/ExperienceDetails'
       width="600"
       height="600"
     />
-  </div>
-</section>
+</Section>
