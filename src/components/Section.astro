@@ -1,9 +1,11 @@
 ---
+import { slugify } from '@/utils'
+
 const { name, label } = Astro.props
 ---
 
 <section
-  id={name}
+  id={slugify(name)}
   aria-label={label}
   class="main-section"
 >
