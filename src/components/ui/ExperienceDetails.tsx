@@ -1,6 +1,7 @@
 import { EXPERIENCES } from '@/constants'
 import { useCallback, useState } from 'react'
 import Icon from './Icon'
+import { Badge } from './Badge'
 
 export default function ExperienceDetails() {
   const [expanded, setExpanded] = useState(EXPERIENCES.length - 1)
@@ -62,16 +63,7 @@ export default function ExperienceDetails() {
                     </li>
                   ))}
                 </ul>
-                <ul className='flex flex-wrap gap-2 mb-4'>
-                  {experience.technologies.map((tech) => (
-                    <li
-                      key={tech}
-                      className='bg-[#12042d]/40 text-[#c084fc] text-sm font-medium px-2.5 py-1 rounded-xl border border-[#7042f8]'
-                    >
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
+                <Badge items={experience.technologies} />
                 <ul className='flex flex-wrap gap-4'>
                   <li>
                     <p className='flex items-center gap-2 text-[#00ffaa]'>
