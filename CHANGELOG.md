@@ -1,3 +1,22 @@
+# [0.4.0](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.3...v0.4.0) (2025-02-09)
+
+
+### Bug Fixes
+
+* **experience:** :bug: Correct text display in description ([2c77f96](https://github.com/bmmedina99/porfolio-bmmedina/commit/2c77f96ffc5e65ddfc0de783885e284158932bda))
+* **hero:** :bug: Fix unresponsive scroll down action ([f007e62](https://github.com/bmmedina99/porfolio-bmmedina/commit/f007e62abc86305a0293ab17d0f9933969b7735d))
+
+
+### Features
+
+* **projects:** :sparkles: Add projects section and Badge component ([#25](https://github.com/bmmedina99/porfolio-bmmedina/issues/25)) ([073a1f2](https://github.com/bmmedina99/porfolio-bmmedina/commit/073a1f2c772a99fac60ee4504accdfe3b9935a8c))
+* **section:** :sparkles: Add Section.astro component ([e4a9959](https://github.com/bmmedina99/porfolio-bmmedina/commit/e4a9959bb2d753e30c7414fa40fc61f847235511))
+
+
+### Performance Improvements
+
+* **Hero:** :zap: Improve accessibility and SEO in Hero section ([b27d179](https://github.com/bmmedina99/porfolio-bmmedina/commit/b27d179c9ff5ccc56cc19f87ee8e3755db161e69))
+
 ## [0.3.3](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.2...v0.3.3) (2025-02-08)
 
 
