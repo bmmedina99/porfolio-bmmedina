@@ -1,4 +1,4 @@
-import type { Experience } from '@/types'
+import type { Experience, Project } from '@/types'
 
 export const SCROLL_OFFSET = 96
 
@@ -98,5 +98,19 @@ export const EXPERIENCES: Experience[] = [
     ],
     location: 'Madrid',
     website: { text: 'izertis.com', link: 'https://www.izertis.com/es/' },
+  },
+]
+
+export const PROJECTS: Project[] = [
+  {
+    id: 0,
+    image: 'https://placehold.co/800x450',
+    title: 'Projecto de ejemplo',
+    description:
+      'Descripción temporal para la muestra de un proyecto en el porfolio, esto será una descripción breve y explicativa.',
+    technologies: ['Astro', 'React', 'TypeScript', 'TailwindCSS'],
+    type: 'Full Stack',
+    githubURL: 'https://github.com/bmmedina99/porfolio-bmmedina',
+    demoURL: 'https://bmmedina.dev',
   },
 ]
