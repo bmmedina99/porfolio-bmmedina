@@ -1,7 +1,8 @@
 ---
-import { PROJECTS } from "@/constants";
-import Section from "../Section.astro";
-import { Badge } from "../ui/Badge";
+import { Image } from 'astro:assets'
+import { PROJECTS } from '@/constants'
+import Section from '../Section.astro'
+import { Badge } from '../ui/Badge'
 ---
 
 <Section name="Proyectos" label="Proyectos destacados">
@@ -10,12 +11,12 @@ import { Badge } from "../ui/Badge";
       PROJECTS.map((project) => (
         <div class="w-full bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md focus:outline-none focus:right-2 focus:-ring-[#6347ff] transition-colors overflow-hidden">
           <div>
-            <img
-              class="object-cover w-full h-full rounded aspect-video "
+            <Image
+              class={"object-cover w-full h-full rounded aspect-video"}
               src={project.image}
               alt={project.title}
-              width="800"
-              height="450"
+              width={800}
+              height={450}
             />
           </div>
           <div class="px-6 pt-6 space-y-4">

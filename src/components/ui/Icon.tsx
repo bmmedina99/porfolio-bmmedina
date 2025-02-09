@@ -10,7 +10,7 @@ const Icon = ({ name, width = 24, height = 24 }: Props) => {
       width={width}
       height={height}
       fill='none'
-      stroke="currentColor"
+      stroke='currentColor'
       strokeWidth='2'
       strokeLinecap='round'
       strokeLinejoin='round'
