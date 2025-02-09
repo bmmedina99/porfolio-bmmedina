@@ -1,7 +1,53 @@
 ---
+import { Image } from 'astro:assets'
+import { PROJECTS } from '@/constants'
 import Section from '../Section.astro'
+import { Badge } from '../ui/Badge'
 ---
 
 <Section name="Proyectos" label="Proyectos destacados">
-  Proyectos
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {
+      PROJECTS.map((project) => (
+        <div class="w-full bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md focus:outline-none focus:right-2 focus:-ring-[#6347ff] transition-colors overflow-hidden">
+          <div>
+            <Image
+              class={"object-cover w-full h-full rounded aspect-video"}
+              src={project.image}
+              alt={project.title}
+              width={800}
+              height={450}
+            />
+          </div>
+          <div class="px-6 pt-6 space-y-4">
+            <h3 class="text-2xl font-semibold">{project.title}</h3>
+            <p class="text-[#cbd5e1] text-pretty">{project.description}</p>
+            <Badge client:visible items={project.technologies} />
+          </div>
+          <div class="flex gap-4 px-6 pb-4">
+            {project.githubURL && (
+              <a
+                href={project.githubURL}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center px-4 py-2 border border-[#3f007d] hover:bg-[#3f007d]/60 text-[#b2b2ff] rounded-md transition-colors"
+              >
+                Código
+              </a>
+            )}
+            {project.demoURL && (
+              <a
+                href={project.demoURL}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center px-4 py-2 border border-[#3f007d] hover:bg-[#3f007d]/60 text-[#b2b2ff] rounded-md transition-colors"
+              >
+                Demo
+              </a>
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </Section>

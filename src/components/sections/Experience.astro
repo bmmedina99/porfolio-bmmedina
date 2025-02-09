@@ -1,16 +1,17 @@
 ---
+import { Image } from 'astro:assets'
 import Section from '../Section.astro'
 import ExperienceDetails from '../ui/ExperienceDetails'
 ---
+
 <Section name="Experiencia" label="Experiencia profesional">
   <ExperienceDetails client:visible />
-    <img
-      src="/assets/svg/tech-skills-orbit.svg"
-      alt="Ilustración de habilidades técnicas"
-      aria-hidden="true"
-      loading="lazy"
-      class="absolute top-0 right-0 object-contain opacity-40 -z-10"
-      width="600"
-      height="600"
-    />
+  <Image
+    class={"absolute top-0 right-0 object-contain opacity-40 -z-10"}
+    src={"/assets/svg/tech-skills-orbit.svg"}
+    alt={"Ilustración de habilidades técnicas"}
+    aria-hidden="true"
+    width={600}
+    height={600}
+  />
 </Section>

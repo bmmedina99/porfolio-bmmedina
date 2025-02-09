@@ -9,3 +9,14 @@ export interface Experience {
   location: string
   website?: { text: string; link: string }
 }
+
+export interface Project {
+  id: number
+  image: string
+  title: string
+  description: string
+  technologies: string[]
+  type: string
+  githubURL?: string
+  demoURL?: string
+}
