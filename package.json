@@ -1,6 +1,6 @@
 {
-  "name": "porfolio-bmmedina",
-  "description": "Porfolio personal con temática Space",
+  "name": "bmmedina.dev",
+  "description": "bmmedina.dev - A personal portfolio where I showcase my web development skills and projects using cutting-edge technologies.",
   "type": "module",
   "version": "0.4.0",
   "scripts": {
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bmmedina99/porfolio-bmmedina.git"
+    "url": "https://github.com/bmmedina99/bmmedina.dev.git"
   },
   "dependencies": {
     "@astrojs/react": "4.2.0",
     "@astrojs/sitemap": "3.2.1",
     "@astrojs/tailwind": "5.1.4",
-    "astro": "5.2.1",
+    "astro": "5.2.5",
     "astro-robots-txt": "1.0.0",
     "astro-seo-schema": "5.0.0",
     "react": "19.0.0",
