@@ -1,3 +1,15 @@
+## [0.4.1](https://github.com/bmmedina99/bmmedina.dev/compare/v0.4.0...v0.4.1) (2025-02-10)
+
+
+### Bug Fixes
+
+* **accessibility:** :bug: Correct valid ARIA attributes in components ([b966a36](https://github.com/bmmedina99/bmmedina.dev/commit/b966a3609941cdc83fac036a4c19cd9fbee20d37))
+
+
+### Performance Improvements
+
+* **images:** :zap: Improve caching policy for static resources ([30173a5](https://github.com/bmmedina99/bmmedina.dev/commit/30173a52fee4cac5c9e19bea8ea3e621a3b4c389))
+
 # [0.4.0](https://github.com/bmmedina99/porfolio-bmmedina/compare/v0.3.3...v0.4.0) (2025-02-09)
 
 
