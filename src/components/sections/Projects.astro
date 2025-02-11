@@ -1,9 +1,9 @@
 ---
-import { Image } from 'astro:assets'
-import { PROJECTS } from '@/constants'
-import Section from '../Section.astro'
-import { Badge } from '../ui/Badge'
-import Icon from '../ui/Icon'
+import { Image } from "astro:assets";
+import { PROJECTS } from "@/constants";
+import Section from "../Section.astro";
+import { Badge } from "../ui/Badge";
+import Icon from "../ui/Icon";
 ---
 
 <Section name="Proyectos" label="Proyectos destacados">
@@ -14,7 +14,7 @@ import Icon from '../ui/Icon'
           <div>
             <Image
               class={"object-cover w-full h-full rounded aspect-video"}
-              src={project.image}
+              src={project.image}1
               alt={project.title}
               width={800}
               height={450}
@@ -23,31 +23,31 @@ import Icon from '../ui/Icon'
           <div class="px-6 pt-6 space-y-4">
             <h3 class="text-2xl font-semibold">{project.title}</h3>
             <p class="text-[#cbd5e1] text-pretty">{project.description}</p>
-            <Badge client:visible items={project.technologies} />
-          </div>
-          <div class="flex gap-4 px-6 pb-4">
-            {project.githubURL && (
-              <a
-                href={project.githubURL}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn"
-              >
-                <Icon client:visible name="github" />
-                <span>Código</span>
-              </a>
-            )}
-            {project.demoURL && (
-              <a
-                href={project.demoURL}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn"
-              >
-                <Icon client:visible name="website" />
-                <span>Demo</span>
-              </a>
-            )}
+            <Badge items={project.technologies} />
+            <div class="flex gap-4 pb-4">
+              {project.githubURL && (
+                <a
+                  href={project.githubURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  <Icon name="github" />
+                  <span>Código</span>
+                </a>
+              )}
+              {project.demoURL && (
+                <a
+                  href={project.demoURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  <Icon name="website" />
+                  <span>Demo</span>
+                </a>
+              )}
+            </div>
           </div>
         </div>
       ))
