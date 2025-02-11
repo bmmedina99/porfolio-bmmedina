@@ -104,13 +104,18 @@ export const EXPERIENCES: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: 0,
-    image: '/assets/images/projects/temporal.png',
+    image: {
+      src: '/assets/images/projects/temporal.png',
+      height: 1280,
+      width: 640,
+      format: 'png',
+    },
     title: 'Projecto de ejemplo',
     description:
       'Descripción temporal para la muestra de un proyecto en el porfolio, esto será una descripción breve y explicativa.',
     technologies: ['Astro', 'React', 'TypeScript', 'TailwindCSS'],
     type: 'Full Stack',
-    githubURL: 'https://github.com/bmmedina99/porfolio-bmmedina',
+    githubURL: 'https://github.com/bmmedina99/bmmedina.dev',
     demoURL: 'https://bmmedina.dev',
   },
 ]

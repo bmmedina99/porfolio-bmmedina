@@ -12,7 +12,7 @@ export interface Experience {
 
 export interface Project {
   id: number
-  image: string
+  image: ImageMetadata
   title: string
   description: string
   technologies: string[]
