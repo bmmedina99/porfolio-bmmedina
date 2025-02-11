@@ -1,30 +1,30 @@
 ---
-import { Image } from "astro:assets";
-import { PROJECTS } from "@/constants";
-import Section from "../Section.astro";
-import { Badge } from "../ui/Badge";
-import Icon from "../ui/Icon";
+import { Image } from 'astro:assets'
+import { PROJECTS } from '@/constants'
+import Section from '../Section.astro'
+import { Badge } from '../ui/Badge'
+import Icon from '../ui/Icon'
 ---
 
 <Section name="Proyectos" label="Proyectos destacados">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     {
       PROJECTS.map((project) => (
-        <div class="w-full bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md focus:outline-none focus:right-2 focus:-ring-[#6347ff] transition-colors overflow-hidden">
-          <div>
-            <Image
-              class={"object-cover w-full h-full rounded aspect-video"}
-              src={project.image}1
-              alt={project.title}
-              width={800}
-              height={450}
-            />
-          </div>
-          <div class="px-6 pt-6 space-y-4">
-            <h3 class="text-2xl font-semibold">{project.title}</h3>
+        <article class="bg-[#12042d]/60 border border-[#3f007d] p-4 rounded-md hover:border-[#7042f8] transition-colors overflow-hidden">
+          <Image
+            class="object-cover rounded aspect-video"
+            src={project.image}
+            alt={project.title}
+            width={800}
+            height={450}
+          />
+          <div class="p-6 space-y-4">
+            <header>
+              <h3 class="text-2xl font-semibold">{project.title}</h3>
+            </header>
             <p class="text-[#cbd5e1] text-pretty">{project.description}</p>
             <Badge items={project.technologies} />
-            <div class="flex gap-4 pb-4">
+            <div class="flex gap-4">
               {project.githubURL && (
                 <a
                   href={project.githubURL}
@@ -49,7 +49,7 @@ import Icon from "../ui/Icon";
               )}
             </div>
           </div>
-        </div>
+        </article>
       ))
     }
   </div>

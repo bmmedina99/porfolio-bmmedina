@@ -104,7 +104,7 @@ export const EXPERIENCES: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: 0,
-    image: '/assets/images/projects/temporal.webp',
+    image: '/assets/images/projects/temporal.png',
     title: 'Projecto de ejemplo',
     description:
       'Descripción temporal para la muestra de un proyecto en el porfolio, esto será una descripción breve y explicativa.',
