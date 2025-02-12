@@ -1,7 +1,102 @@
 ---
+import { Image } from 'astro:assets'
+import { PROFILE_IMG } from '@/constants'
 import Section from '../Section.astro'
 ---
 
 <Section name="Sobre mí" label="Información personal">
-  Sobre mí
+  <div class="grid items-start gap-8 md:grid-cols-2">
+    <div class="space-y-4 [&>p]:text-lg">
+      <Image
+        src={PROFILE_IMG}
+        alt="Brandon Medina - Desarrollador Web Full Stack"
+      />
+      <p>
+        Desarrollador Web Full Stack con más de 2 años de experiencia
+        autodidacta. Durante mi trayectoria, he aplicado mis conocimientos
+        desarrollando proyectos como el sitio web para Gray Gorilla Fitness y
+        automatizando tareas con Python.
+      </p>
+      <p>
+        Disfruto investigar y trabajar de forma independiente; no obstante,
+        valoro la colaboración en equipo. En Izertis, superviso y coordino
+        operadores durante el turno asignado para asegurar la continuidad del
+        servicio.
+      </p>
+      <p>
+        Fuera del ámbito laboral, me apasiona el ajedrez y la música clásica.
+        Estas aficiones potencian mi capacidad analítica y creativa. Me ayudan
+        en el desarrollo, optimizando procesos y creando soluciones.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 select-none">
+        <a href="#" class="btn">
+          <span class="pl-2">Descagar CV</span>
+        </a>
+        <button id="contactMe" class="btn">
+          <span class="pl-2">Contáctame</span>
+        </button>
+      </div>
+    </div>
+    <div class="space-y-8">
+      <div>
+        <h3 class="mb-4 text-2xl font-semibold">
+          Habilidades técnicas
+        </h3>
+        <ul class="flex flex-wrap items-center justify-center gap-4">
+          <li>NextJS</li>
+          <li>Astro</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>NodeJS</li>
+          <li>Git</li>
+          <li>TailwindCSS</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-4 text-2xl font-semibold">
+          Habilidades blandas
+        </h3>
+        <ul class="flex flex-wrap items-center justify-center gap-4">
+          <li class="badge">Trabajo en equipo</li>
+          <li class="badge">Comunicación efectiva</li>
+          <li class="badge">Adaptabilidad</li>
+          <li class="badge">Pensamiento crítico</li>
+          <li class="badge">Gestión del tiempo</li>
+          <li class="badge">Resolución de problemas</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-4 text-2xl font-semibold">
+          Estudios
+        </h3>
+        <div class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg transition-colors">
+          <div class="flex items-center justify-between gap-6">
+            <h4 class="text-lg font-semibold tracking-wide">
+              Desarrollo de Aplicaciones Multiplataforma &bull; CES
+              Fuencarral
+            </h4>
+          </div>
+          <p class="mt-1 text-sm text-gray-400">2019 - 2021</p>
+        </div>
+        <div class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg transition-colors">
+          <div class="flex items-center justify-between gap-6">
+            <h4 class="text-lg font-semibold tracking-wide">
+              Sistemas Microinformáticos y Redes &bull; CES Fuencarral
+            </h4>
+          </div>
+          <p class="mt-1 text-sm text-gray-400">2017 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </Section>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const contactMeBtn = document.querySelector('#contactMe')
+    contactMeBtn?.addEventListener('click', () => {
+      const contact = document.querySelector('#contacto')
+      contact?.scrollIntoView({ behavior: 'smooth' })
+    })
+  })
+</script>

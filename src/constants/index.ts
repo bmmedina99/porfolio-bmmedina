@@ -9,6 +9,13 @@ export const NAV_ITEMS = [
   { id: '04', label: 'contacto' },
 ]
 
+export const PROFILE_IMG: ImageMetadata = {
+  src: '/assets/images/profile.png',
+  width: 192,
+  height: 192,
+  format: 'png',
+}
+
 export const EXPERIENCES: Experience[] = [
   {
     id: 0,
