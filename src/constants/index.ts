@@ -119,3 +119,31 @@ export const PROJECTS: Project[] = [
     demoURL: 'https://bmmedina.dev',
   },
 ]
+
+export const PROFILE_IMG: ImageMetadata = {
+  src: '/assets/images/profile.png',
+  width: 192,
+  height: 192,
+  format: 'png',
+}
+
+export const TECH_SKILLS = [
+  'NextJS',
+  'Astro',
+  'React',
+  'TypeScript',
+  'NodeJS',
+  'Python',
+  'Git',
+  'TailwindCSS',
+  'PostgreSQL',
+]
+
+export const SOFT_SKILLS = [
+  'Trabajo en equipo',
+  'Comunicación efectiva',
+  'Adaptabilidad',
+  'Pensamiento crítico',
+  'Gestión del tiempo',
+  'Resolución de problemas',
+]
