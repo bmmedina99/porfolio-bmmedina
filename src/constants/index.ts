@@ -128,15 +128,17 @@ export const PROFILE_IMG: ImageMetadata = {
 }
 
 export const TECH_SKILLS = [
-  'NextJS',
+  'Next.js',
   'Astro',
   'React',
   'TypeScript',
-  'NodeJS',
+  'Node.js',
+  'Express',
+  'NestJS',
   'Python',
-  'Git',
   'TailwindCSS',
   'PostgreSQL',
+  'Git & Github',
 ]
 
 export const SOFT_SKILLS = [
