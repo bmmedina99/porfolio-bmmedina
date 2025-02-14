@@ -9,13 +9,6 @@ export const NAV_ITEMS = [
   { id: '04', label: 'contacto' },
 ]
 
-export const PROFILE_IMG: ImageMetadata = {
-  src: '/assets/images/profile.png',
-  width: 192,
-  height: 192,
-  format: 'png',
-}
-
 export const EXPERIENCES: Experience[] = [
   {
     id: 0,
@@ -125,4 +118,32 @@ export const PROJECTS: Project[] = [
     githubURL: 'https://github.com/bmmedina99/bmmedina.dev',
     demoURL: 'https://bmmedina.dev',
   },
+]
+
+export const PROFILE_IMG: ImageMetadata = {
+  src: '/assets/images/profile.png',
+  width: 192,
+  height: 192,
+  format: 'png',
+}
+
+export const TECH_SKILLS = [
+  'NextJS',
+  'Astro',
+  'React',
+  'TypeScript',
+  'NodeJS',
+  'Python',
+  'Git',
+  'TailwindCSS',
+  'PostgreSQL',
+]
+
+export const SOFT_SKILLS = [
+  'Trabajo en equipo',
+  'Comunicación efectiva',
+  'Adaptabilidad',
+  'Pensamiento crítico',
+  'Gestión del tiempo',
+  'Resolución de problemas',
 ]

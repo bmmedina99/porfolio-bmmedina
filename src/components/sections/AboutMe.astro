@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets'
-import { PROFILE_IMG } from '@/constants'
+import { PROFILE_IMG, SOFT_SKILLS, TECH_SKILLS } from '@/constants'
 import Section from '../Section.astro'
 ---
 
@@ -51,14 +51,9 @@ import Section from '../Section.astro'
           Habilidades técnicas
         </h3>
         <ul class="flex flex-wrap items-center justify-center gap-4">
-          <li>NextJS</li>
-          <li>Astro</li>
-          <li>React</li>
-          <li>TypeScript</li>
-          <li>NodeJS</li>
-          <li>Git</li>
-          <li>TailwindCSS</li>
-          <li>PostgreSQL</li>
+          {TECH_SKILLS.map((tech) => (
+            <li>{tech}</li>
+          ))}
         </ul>
       </div>
       <div>
@@ -66,12 +61,9 @@ import Section from '../Section.astro'
           Habilidades blandas
         </h3>
         <ul class="flex flex-wrap items-center justify-center gap-4">
-          <li class="badge">Trabajo en equipo</li>
-          <li class="badge">Comunicación efectiva</li>
-          <li class="badge">Adaptabilidad</li>
-          <li class="badge">Pensamiento crítico</li>
-          <li class="badge">Gestión del tiempo</li>
-          <li class="badge">Resolución de problemas</li>
+          {SOFT_SKILLS.map((soft) => (
+            <li class="badge">{soft}</li>
+          ))}
         </ul>
       </div>
       <div>
