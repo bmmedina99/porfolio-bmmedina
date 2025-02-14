@@ -133,7 +133,6 @@ export const TECH_SKILLS = [
   'React',
   'TypeScript',
   'Node.js',
-  'Express',
   'NestJS',
   'Python',
   'TailwindCSS',
