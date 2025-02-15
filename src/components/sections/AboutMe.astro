@@ -1,8 +1,10 @@
 ---
 import { Image } from 'astro:assets'
 import { PROFILE_IMG, SOFT_SKILLS, TECH_SKILLS } from '@/constants'
+import { slugify } from '@/utils'
 import Section from '../Section.astro'
 import { Badge } from '../ui/Badge'
+import Skills from '../ui/Skills'
 ---
 
 <Section name="Sobre mí" label="Información personal">
@@ -51,10 +53,15 @@ import { Badge } from '../ui/Badge'
         <h3 class="mb-4 text-2xl font-semibold text-[#cbd5e1]">
           Habilidades técnicas
         </h3>
-        <ul class="flex flex-wrap items-center justify-center gap-4">
-          {TECH_SKILLS.map((tech) => (
-            <li>{tech}</li>
-          ))}
+        <ul class="flex flex-wrap gap-2 my-4">
+          {
+            TECH_SKILLS.map((tech) => (
+              <li class="flex flex-col items-center">
+                <Skills name={slugify(tech)} width={48} height={48} />
+                <p>{tech}</p>
+              </li>
+            ))
+          }
         </ul>
       </div>
       <div>
@@ -69,27 +76,27 @@ import { Badge } from '../ui/Badge'
           class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg transition-colors"
         >
           <div class="flex items-center justify-between gap-6">
-            <h4 class="text-lg font-semibold tracking-wide">
+            <h4 class="text-sm font-semibold tracking-wide">
               <span class="text-[#c084fc]"
                 >Formación Profesional de Grado Superior, Desarrollo de
                 Aplicaciones Multiplataforma</span
               > &bull; CES Fuencarral
             </h4>
           </div>
-          <p class="text-sm tracking-wide">sep. 2019 - mar. 2021</p>
+          <p class="text-xs tracking-wide">sep. 2019 - mar. 2021</p>
         </div>
         <div
           class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg transition-colors"
         >
           <div class="flex items-center justify-between gap-6">
-            <h4 class="text-lg font-semibold tracking-wide">
+            <h4 class="text-sm font-semibold tracking-wide">
               <span class="text-[#c084fc]"
                 >Formación Profesional de Grado Medio, Sistemas
                 Microinformáticos y Redes</span
               > &bull; CES Fuencarral
             </h4>
           </div>
-          <p class="text-sm tracking-wide">sep. 2017 - mar. 2019</p>
+          <p class="text-xs tracking-wide">sep. 2017 - mar. 2019</p>
         </div>
       </div>
     </div>
