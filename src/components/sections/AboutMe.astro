@@ -9,37 +9,36 @@ import Skills from '../ui/Skills'
 
 <Section name="Sobre mí" label="Información personal">
   <div class="grid items-start gap-8 lg:grid-cols-2">
-    <div class="space-y-4 [&>p]:text-lg [&>p]:text-pretty">
+    <div
+      class="space-y-4 [&>p]:text-lg [&>p]:text-pretty [&>p>strong]:text-[#c084fc] [&>p>strong]:font-medium"
+    >
       <div class="clear-left"></div>
       <Image
         src={PROFILE_IMG}
         alt="Brandon Medina - Desarrollador Web Full Stack"
         class="profile-img float-left mr-4 object-cover"
       />
-      <p class="[&>strong]:text-[#c084fc] [&>strong]:font-medium">
+      <p>
         <strong>Desarrollador Web Full Stack</strong> con más de
         <strong> 3 años de experiencia autodidacta</strong>. Durante mi
         trayectoria, he aplicado mis conocimientos desarrollando proyectos como
         el sitio web para <strong>Gray Gorilla Fitness</strong> y
         <strong>automatizando tareas con Python</strong>.
       </p>
-      <p class="[&>strong]:text-[#c084fc] [&>strong]:font-medium">
+      <p>
         Disfruto investigar y trabajar <strong>de forma independiente</strong>;
         no obstante, valoro <strong>la colaboración en equipo</strong>. En
-        Izertis,
-        <strong>superviso y coordino operadores </strong>
-        durante un turno asignado para
-        <strong> asegurar la continuidad del servicio</strong>.
+        Izertis, <strong>superviso y coordino operadores</strong> durante un turno
+        asignado para <strong>asegurar la continuidad del servicio</strong>.
       </p>
-      <p class="[&>strong]:text-[#c084fc] [&>strong]:font-medium">
+      <p>
         Fuera del ámbito laboral, me apasiona el ajedrez y la música clásica.
         Estas aficiones potencian mi <strong
           >capacidad analítica y creativa</strong
-        >. Me ayudan en el desarrollo, <strong>optimizando procesos</strong> y <strong
-          >creando soluciones</strong
-        >.
+        >, ayudándome en el desarrollo, <strong>optimizando procesos</strong> y
+        <strong>creando soluciones</strong>.
       </p>
-      <div class="flex flex-wrap items-center justify-center gap-4 select-none">
+      <div class="flex flex-wrap justify-center gap-4">
         <a href="cv_bmmedina.pdf" download class="btn">
           <span class="pl-2">Descagar CV</span>
         </a>
@@ -48,57 +47,70 @@ import Skills from '../ui/Skills'
         </button>
       </div>
     </div>
-    <div class="space-y-8">
-      <div>
-        <h3 class="mb-4 text-2xl font-semibold text-[#cbd5e1]">
+    <div class="space-y-4">
+      <section aria-labelledby="tech-skills-heading">
+        <h3
+          id="tech-skills-heading"
+          class="mb-4 text-2xl font-semibold text-[#cbd5e1]"
+        >
           Habilidades técnicas
         </h3>
-        <ul class="flex flex-wrap gap-2 my-4">
+        <ul class="flex flex-wrap gap-2 justify-center">
           {
             TECH_SKILLS.map((tech) => (
               <li class="flex flex-col items-center">
                 <Skills name={slugify(tech)} width={48} height={48} />
-                <p>{tech}</p>
+                <p class="mt-2 text-sm">{tech}</p>
               </li>
             ))
           }
         </ul>
-      </div>
-      <div>
-        <h3 class="mb-4 text-2xl font-semibold text-[#cbd5e1]">
+      </section>
+      <section aria-labelledby="soft-skills-heading">
+        <h3
+          id="soft-skills-heading"
+          class="mb-4 text-2xl font-semibold text-[#cbd5e1]"
+        >
           Habilidades blandas
         </h3>
         <Badge items={SOFT_SKILLS} />
-      </div>
-      <div>
-        <h3 class="mb-4 text-2xl font-semibold text-[#cbd5e1]">Estudios</h3>
-        <div
-          class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg transition-colors"
+      </section>
+      <section aria-labelledby="education-heading">
+        <h3
+          id="education-heading"
+          class="mb-4 text-2xl font-semibold text-[#cbd5e1]"
         >
-          <div class="flex items-center justify-between gap-6">
-            <h4 class="text-sm font-semibold tracking-wide">
-              <span class="text-[#c084fc]"
-                >Formación Profesional de Grado Superior, Desarrollo de
-                Aplicaciones Multiplataforma</span
-              > &bull; CES Fuencarral
-            </h4>
-          </div>
-          <p class="text-xs tracking-wide">sep. 2019 - mar. 2021</p>
-        </div>
-        <div
-          class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg transition-colors"
-        >
-          <div class="flex items-center justify-between gap-6">
-            <h4 class="text-sm font-semibold tracking-wide">
-              <span class="text-[#c084fc]"
-                >Formación Profesional de Grado Medio, Sistemas
-                Microinformáticos y Redes</span
-              > &bull; CES Fuencarral
-            </h4>
-          </div>
-          <p class="text-xs tracking-wide">sep. 2017 - mar. 2019</p>
-        </div>
-      </div>
+          Estudios
+        </h3>
+        <ul class="space-y-4">
+          <li
+            class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg"
+          >
+            <div class="flex justify-between items-center">
+              <h4 class="text-sm font-semibold tracking-wide">
+                <span class="text-[#c084fc]"
+                  >Formación Profesional de Grado Superior, Desarrollo de
+                  Aplicaciones Multiplataforma</span
+                > &bull; CES Fuencarral
+              </h4>
+            </div>
+            <p class="text-xs tracking-wide">sep. 2019 - mar. 2021</p>
+          </li>
+          <li
+            class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg"
+          >
+            <div class="flex justify-between items-center">
+              <h4 class="text-sm font-semibold tracking-wide">
+                <span class="text-[#c084fc]"
+                  >Formación Profesional de Grado Medio, Sistemas
+                  Microinformáticos y Redes</span
+                > &bull; CES Fuencarral
+              </h4>
+            </div>
+            <p class="text-xs tracking-wide">sep. 2019 - mar. 2021</p>
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </Section>

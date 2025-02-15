@@ -29,7 +29,7 @@
    ```
 3. Inicia el servidor de desarrollo:
    ```bash
-   pnpm dev
+   pnpm run dev
    ```
 4. Abre tu navegador y visita http://localhost:4000/
 
