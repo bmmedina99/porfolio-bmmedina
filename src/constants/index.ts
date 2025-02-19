@@ -104,13 +104,47 @@ export const EXPERIENCES: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: 0,
-    image: '/assets/images/projects/temporal.webp',
+    image: {
+      src: '/assets/images/projects/temporal.png',
+      height: 1280,
+      width: 640,
+      format: 'png',
+    },
     title: 'Projecto de ejemplo',
     description:
       'Descripción temporal para la muestra de un proyecto en el porfolio, esto será una descripción breve y explicativa.',
     technologies: ['Astro', 'React', 'TypeScript', 'TailwindCSS'],
     type: 'Full Stack',
-    githubURL: 'https://github.com/bmmedina99/porfolio-bmmedina',
+    githubURL: 'https://github.com/bmmedina99/bmmedina.dev',
     demoURL: 'https://bmmedina.dev',
   },
+]
+
+export const PROFILE_IMG: ImageMetadata = {
+  src: '/assets/images/profile.png',
+  width: 192,
+  height: 192,
+  format: 'png',
+}
+
+export const TECH_SKILLS = [
+  'Next.js',
+  'Astro',
+  'React',
+  'TypeScript',
+  'Node.js',
+  'NestJS',
+  'Python',
+  'TailwindCSS',
+  'PostgreSQL',
+  'Git & Github',
+]
+
+export const SOFT_SKILLS = [
+  'Trabajo en equipo',
+  'Comunicación efectiva',
+  'Adaptabilidad',
+  'Pensamiento crítico',
+  'Gestión del tiempo',
+  'Resolución de problemas',
 ]
