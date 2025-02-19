@@ -1,3 +1,25 @@
+# [0.5.0](https://github.com/bmmedina99/bmmedina.dev/compare/v0.4.1...v0.5.0) (2025-02-19)
+
+
+### Bug Fixes
+
+* **about:** :speech_balloon: Text of the desc. in the about section ([b1c19e4](https://github.com/bmmedina99/bmmedina.dev/commit/b1c19e477a11c0d35de70b4b6c89c4247c9a0b27))
+* **projects:** :bug: Improve image optimization ([60639ac](https://github.com/bmmedina99/bmmedina.dev/commit/60639ac143c604cb665fef2c5522776bc0a23463))
+* **seo:** :bug: Correct JSON-LD structured schema ([58300b7](https://github.com/bmmedina99/bmmedina.dev/commit/58300b7b1168b7625e3551d9794c3f73587097c3))
+
+
+### Features
+
+* **about:** :sparkles: Add about-me section and improve structure ([#28](https://github.com/bmmedina99/bmmedina.dev/issues/28)) ([cfec597](https://github.com/bmmedina99/bmmedina.dev/commit/cfec597d49182cb67ee57d204abe982bad15dbb3))
+* **about:** :sparkles: Add downloadable CV in PDF format ([6da1ca2](https://github.com/bmmedina99/bmmedina.dev/commit/6da1ca22f78a5a2317e716c07203c7a7de2b6617))
+* **icon:** :sparkles: add technical skill icons  ([#29](https://github.com/bmmedina99/bmmedina.dev/issues/29)) ([2b01f00](https://github.com/bmmedina99/bmmedina.dev/commit/2b01f0066a970dd270ceea868bad59ee48f05ae0))
+* **package:** :package: Add package for image optimization ([9c99b71](https://github.com/bmmedina99/bmmedina.dev/commit/9c99b71180b080c3d25f0aca7e7abf582395a746))
+
+
+### Performance Improvements
+
+* **js:** :zap: Reduce unused JS by removing client:visible ([2ec08f8](https://github.com/bmmedina99/bmmedina.dev/commit/2ec08f89b6ab214aa369ef77716de1e864b5eb45))
+
 ## [0.4.1](https://github.com/bmmedina99/bmmedina.dev/compare/v0.4.0...v0.4.1) (2025-02-10)
 
 
