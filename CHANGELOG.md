@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/bmmedina99/bmmedina.dev/compare/v0.5.0...v0.5.1) (2025-02-22)
+
+
+### Bug Fixes
+
+* **package:** :bug: Correct minor issue in package.json ([4507bcd](https://github.com/bmmedina99/bmmedina.dev/commit/4507bcdd27514bbac788cb11e9f9dcf9c21d69ef))
+
 # [0.5.0](https://github.com/bmmedina99/bmmedina.dev/compare/v0.4.1...v0.5.0) (2025-02-19)
 
 
