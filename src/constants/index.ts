@@ -84,7 +84,7 @@ export const EXPERIENCES: Experience[] = [
     endDate: 'Presente',
     description: [
       'Toma de decisiones sobre escalado de incidencias, contactando con las respectivas guardias según la criticidad de los problemas detectados.',
-      'Desarrollé un programa para mejorar la eficiencia de una tarea específica del servicio, reduciendo así el tiempo de 1 hora a 15 min.',
+      'Participé en la mejora y reestructuración de un programa existente, logrando disminuir el tiempo de ejecución de una tarea crítica de 1 hora a 15 minutos.',
       'Monitoreo aplicaciones bajo monitores transaccionales Tuxedo y servidores de aplicaciones.',
       'Registro detallado de problemas y soluciones en herramientas de ticketing usando BMC Remedy, contribuyendo a la base de conocimiento del equipo.',
       'Capacidad para trabajar en equipo, comunicando de manera clara y efectiva con diferentes departamentos.',
