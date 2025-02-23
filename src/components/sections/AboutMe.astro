@@ -5,6 +5,7 @@ import { slugify } from '@/utils'
 import Section from '../Section.astro'
 import { Badge } from '../ui/Badge'
 import Skills from '../ui/Skills'
+import Icon from '../ui/Icon'
 ---
 
 <Section name="Sobre mí" label="Información personal">
@@ -41,10 +42,12 @@ import Skills from '../ui/Skills'
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="cv_bmmedina.pdf" download class="btn">
-          <span class="pl-2">Descagar CV</span>
+          <Icon name="download" />
+          <span>Descagar CV</span>
         </a>
         <button id="contactMe" class="btn">
-          <span class="pl-2">Contáctame</span>
+          <Icon name="contact" />
+          <span>Contáctame</span>
         </button>
       </div>
     </div>
