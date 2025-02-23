@@ -116,11 +116,7 @@ import Skills from '../ui/Skills'
   </div>
 </Section>
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const contactMeBtn = document.querySelector('#contactMe')
-    contactMeBtn?.addEventListener('click', () => {
-      const contact = document.querySelector('#contacto')
-      contact?.scrollIntoView({ behavior: 'smooth' })
-    })
+  document.getElementById('contactMe')?.addEventListener('click', () => {
+    document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })
   })
 </script>
