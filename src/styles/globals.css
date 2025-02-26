@@ -35,11 +35,11 @@ html {
 }
 
 label {
-  @apply block text-xl font-medium select-none
+  @apply block text-xl font-medium text-[#cbd5e1] select-none
 }
 
 input, textarea {
- @apply text-[#f6f6f6] text-lg w-full px-3 py-2 mt-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c084fc]
+ @apply text-[#f6f6f6] text-lg w-full px-3 py-2 mt-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c084fc] resize-none
 }
 
 .profile-img {
