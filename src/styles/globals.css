@@ -39,7 +39,7 @@ label {
 }
 
 input, textarea {
- @apply bg-[#12042d]/60 border border-[#3f007d] rounded-lg text-[#f6f6f6] text-lg w-full px-3 py-2 mt-2 placeholder-[#b2b2ff] focus:outline-none focus:ring-2 focus:ring-[#7042f8] resize-none
+ @apply bg-[#12042d]/60 border border-[#3f007d] rounded-lg text-[#f6f6f6] text-lg w-full px-3 py-2 mt-2 placeholder-[#b2b2ff]/60 focus:outline-none focus:ring-2 focus:ring-[#7042f8] resize-none
 }
 
 .profile-img {
