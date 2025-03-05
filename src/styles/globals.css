@@ -31,7 +31,7 @@ html {
 }
 
 .btn {
-  @apply flex items-center justify-center gap-2 px-4 py-2 border border-[#3f007d] hover:bg-[#3f007d]/60 text-[#b2b2ff] rounded-md transition-colors
+  @apply flex items-center justify-center gap-2 px-4 py-2 border border-[#3f007d] hover:bg-[#3f007d]/60 text-[#b2b2ff] rounded-md transition-colors select-none
 }
 
 label {

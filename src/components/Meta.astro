@@ -7,16 +7,17 @@ const { title, description } = Astro.props
 ---
 
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{title}</title>
 <meta name="description" content={description} />
 <meta name="generator" content={Astro.generator} />
 <meta name="robots" content="index, follow">
 <meta name="author" content="Brandon Medina">
-<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
-<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="/favicon-180x180.png" type="image/png" sizes="180x180">
-<link rel="icon" href="/favicon-192x192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link rel="canonical" href={canonicalURL} />
 <meta property="og:type" content="website" />
@@ -24,12 +25,12 @@ const { title, description } = Astro.props
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:site_name" content="bmmedina.dev" />
-<meta property="og:image" content="/assets/images/og-image.png" />
+<meta property="og:image" content="/images/og-image.png" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content="/assets/images/og-image.png" />
+<meta property="twitter:image" content="/images/og-image.png" />
 <Schema item={{
   "@context": "https://schema.org",
   "@type": "Person",
@@ -37,7 +38,7 @@ const { title, description } = Astro.props
   jobTitle: "Desarrollador Web Full Stack",
   url: canonicalURL,
   description: description,
-  image: "https://bmmedina.dev/assets/images/profile.png",
+  image: "/images/og-image.png",
   sameAs: [
     "https://github.com/bmmedina99",
     "https://linkedin.com/in/bmmedina99",
