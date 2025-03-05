@@ -1,0 +1,51 @@
+---
+import Skills from '../ui/Skills'
+---
+
+<footer
+  class="backdrop-blur-md bg-gradient-to-r from-[#030014]/70 to-[#7042f8]/20 border-t border-[#7042f8]/40 px-6 py-6 space-y-4"
+>
+  <h3 class="text-[#cbd5e1] text-xl font-semibold text-center">
+    También puedes contactarme por estos medios:
+  </h3>
+  <nav aria-label="Redes Sociales">
+    <ul class="flex justify-center space-x-6">
+      <li>
+        <a
+          href="https://github.com/username"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col items-center"
+          aria-label="GitHub"
+        >
+          <Skills name="git-github" width={32} height={32} />
+          <span class="mt-2 text-sm">GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://linkedin.com/in/username"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col items-center"
+          aria-label="LinkedIn"
+        >
+          <Skills name="linkedin" width={32} height={32} />
+          <span class="mt-2 text-sm">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://instagram.com/username"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col items-center"
+          aria-label="Instagram"
+        >
+          <Skills name="instagram" width={32} height={32} />
+          <span class="mt-2 text-sm">Instagram</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

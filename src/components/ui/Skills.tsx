@@ -11,7 +11,7 @@ const Skills = ({ name, width = 24, height = 24 }: Props) => {
       height={height}
       fill='none'
     >
-      <use href={`assets/svg/skills.svg#${name}`} />
+      <use href={`svg/skills.svg#${name}`} />
     </svg>
   )
 }

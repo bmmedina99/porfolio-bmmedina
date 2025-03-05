@@ -15,7 +15,7 @@ const Icon = ({ name, width = 24, height = 24 }: Props) => {
       strokeLinecap='round'
       strokeLinejoin='round'
     >
-      <use href={`assets/svg/icons.svg#${name}`} />
+      <use href={`svg/icons.svg#${name}`} />
     </svg>
   )
 }

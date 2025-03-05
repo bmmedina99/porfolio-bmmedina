@@ -5,6 +5,7 @@ import { slugify } from '@/utils'
 import Section from '../Section.astro'
 import { Badge } from '../ui/Badge'
 import Skills from '../ui/Skills'
+import Icon from '../ui/Icon'
 ---
 
 <Section name="Sobre mí" label="Información personal">
@@ -17,6 +18,8 @@ import Skills from '../ui/Skills'
         src={PROFILE_IMG}
         alt="Brandon Medina - Desarrollador Web Full Stack"
         class="profile-img float-left mr-4 object-cover"
+        width={192}
+        height={192}
       />
       <p>
         <strong>Desarrollador Web Full Stack</strong> con más de
@@ -41,10 +44,12 @@ import Skills from '../ui/Skills'
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="cv_bmmedina.pdf" download class="btn">
-          <span class="pl-2">Descagar CV</span>
+          <Icon name="download" />
+          <span>Descagar CV</span>
         </a>
         <button id="contactMe" class="btn">
-          <span class="pl-2">Contáctame</span>
+          <Icon name="contact" />
+          <span>Contáctame</span>
         </button>
       </div>
     </div>
@@ -85,7 +90,7 @@ import Skills from '../ui/Skills'
         </h3>
         <ul class="space-y-4">
           <li
-            class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg"
+            class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] rounded-lg"
           >
             <div class="flex justify-between items-center">
               <h4 class="text-sm font-semibold tracking-wide">
@@ -98,7 +103,7 @@ import Skills from '../ui/Skills'
             <p class="text-xs tracking-wide">sep. 2019 - mar. 2021</p>
           </li>
           <li
-            class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] hover:border-purple-500/40 rounded-lg"
+            class="p-4 mb-2 cursor-pointer bg-[#12042d]/60 border border-[#3f007d] rounded-lg"
           >
             <div class="flex justify-between items-center">
               <h4 class="text-sm font-semibold tracking-wide">
@@ -116,11 +121,7 @@ import Skills from '../ui/Skills'
   </div>
 </Section>
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const contactMeBtn = document.querySelector('#contactMe')
-    contactMeBtn?.addEventListener('click', () => {
-      const contact = document.querySelector('#contacto')
-      contact?.scrollIntoView({ behavior: 'smooth' })
-    })
+  document.getElementById('contactMe')?.addEventListener('click', () => {
+    document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })
   })
 </script>
