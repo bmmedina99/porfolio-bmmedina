@@ -16,7 +16,7 @@
     "url": "https://github.com/bmmedina99/bmmedina.dev.git"
   },
   "dependencies": {
-    "@astrojs/react": "4.2.0",
+    "@astrojs/react": "4.2.1",
     "@astrojs/sitemap": "3.2.1",
     "@astrojs/tailwind": "5.1.4",
     "astro": "5.2.5",
@@ -32,13 +32,13 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "12.0.1",
     "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.3",
+    "@types/react-dom": "19.0.4",
     "autoprefixer": "10.4.20",
-    "postcss": "8.5.1",
+    "postcss": "8.5.3",
     "schema-dts": "1.1.5",
     "semantic-release": "24.2.3",
     "tailwindcss": "3.4.17",
     "typescript": "5.8.2"
   },
-  "packageManager": "pnpm@10.4.1"
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }
