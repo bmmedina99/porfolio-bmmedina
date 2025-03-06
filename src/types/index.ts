@@ -20,3 +20,15 @@ export interface Project {
   githubURL?: string
   demoURL?: string
 }
+
+export interface Profile {
+  image: ImageMetadata
+  techSkills: string[]
+  softSkills: string[]
+  studies: {
+    title: string
+    institution: string
+    startDate: string
+    endDate: string
+  }[]
+}

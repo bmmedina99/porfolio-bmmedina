@@ -1,6 +1,6 @@
+import ProfileImg from '@/assets/profile.png'
 import Temporal from '@/assets/projects/temporal.png'
-import type { Experience, Project } from '@/types'
-import Profile from '@/assets/profile.png'
+import type { Experience, Profile, Project } from '@/types'
 
 export const SCROLL_OFFSET = 96
 
@@ -117,26 +117,42 @@ export const PROJECTS: Project[] = [
   },
 ]
 
-export const PROFILE_IMG: ImageMetadata = Profile
-
-export const TECH_SKILLS = [
-  'Next.js',
-  'Astro',
-  'React',
-  'TypeScript',
-  'Node.js',
-  'NestJS',
-  'Python',
-  'TailwindCSS',
-  'PostgreSQL',
-  'Git & Github',
-]
-
-export const SOFT_SKILLS = [
-  'Trabajo en equipo',
-  'Comunicación efectiva',
-  'Adaptabilidad',
-  'Pensamiento crítico',
-  'Gestión del tiempo',
-  'Resolución de problemas',
-]
+export const PROFILE: Profile = {
+  image: ProfileImg,
+  techSkills: [
+    'Next.js',
+    'Astro',
+    'React',
+    'TypeScript',
+    'Node.js',
+    'NestJS',
+    'Python',
+    'TailwindCSS',
+    'PostgreSQL',
+    'Git & Github',
+  ],
+  softSkills: [
+    'Trabajo en equipo',
+    'Comunicación efectiva',
+    'Adaptabilidad',
+    'Pensamiento crítico',
+    'Gestión del tiempo',
+    'Resolución de problemas',
+  ],
+  studies: [
+    {
+      title:
+        'Formación Profesional de Grado Superior, Desarrollo de Aplicaciones Multiplataforma',
+      institution: 'CES Fuencarral',
+      startDate: 'sep. 2019',
+      endDate: 'mar. 2021',
+    },
+    {
+      title:
+        'Formación Profesional de Grado Medio, Sistemas Microinformáticos y Redes',
+      institution: 'CES Fuencarral',
+      startDate: 'sep. 2017',
+      endDate: 'mar. 2019',
+    },
+  ],
+}
