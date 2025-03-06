@@ -98,9 +98,9 @@ import Skills from '../ui/Skills'
                     {study.institution}
                   </h4>
                 </div>
-                <p class="text-xs tracking-wide">
+                <time datetime={study.date} class="text-xs tracking-wide block">
                   {study.startDate} - {study.endDate}
-                </p>
+                </time>
               </li>
             ))
           }

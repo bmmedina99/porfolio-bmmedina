@@ -28,6 +28,7 @@ export interface Profile {
   studies: {
     title: string
     institution: string
+    date: string
     startDate: string
     endDate: string
   }[]

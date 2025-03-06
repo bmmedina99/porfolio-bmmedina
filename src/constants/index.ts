@@ -144,6 +144,7 @@ export const PROFILE: Profile = {
       title:
         'Formación Profesional de Grado Superior, Desarrollo de Aplicaciones Multiplataforma',
       institution: 'CES Fuencarral',
+      date: '2019-09',
       startDate: 'sep. 2019',
       endDate: 'mar. 2021',
     },
@@ -151,6 +152,7 @@ export const PROFILE: Profile = {
       title:
         'Formación Profesional de Grado Medio, Sistemas Microinformáticos y Redes',
       institution: 'CES Fuencarral',
+      date: '2017-09',
       startDate: 'sep. 2017',
       endDate: 'mar. 2019',
     },
