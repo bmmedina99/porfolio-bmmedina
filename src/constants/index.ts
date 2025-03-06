@@ -1,4 +1,6 @@
+import Temporal from '@/assets/projects/temporal.png'
 import type { Experience, Project } from '@/types'
+import Profile from '@/assets/profile.png'
 
 export const SCROLL_OFFSET = 96
 
@@ -6,7 +8,7 @@ export const NAV_ITEMS = [
   { id: '01', label: 'experiencia' },
   { id: '02', label: 'proyectos' },
   { id: '03', label: 'sobre mí' },
-  { id: '04', label: 'contacto' },
+  { id: '04', label: 'contactáme' },
 ]
 
 export const EXPERIENCES: Experience[] = [
@@ -104,12 +106,7 @@ export const EXPERIENCES: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: 0,
-    image: {
-      src: '/assets/images/projects/temporal.png',
-      height: 1280,
-      width: 640,
-      format: 'png',
-    },
+    image: Temporal,
     title: 'Projecto de ejemplo',
     description:
       'Descripción temporal para la muestra de un proyecto en el porfolio, esto será una descripción breve y explicativa.',
@@ -120,12 +117,7 @@ export const PROJECTS: Project[] = [
   },
 ]
 
-export const PROFILE_IMG: ImageMetadata = {
-  src: '/assets/images/profile.png',
-  width: 192,
-  height: 192,
-  format: 'png',
-}
+export const PROFILE_IMG: ImageMetadata = Profile
 
 export const TECH_SKILLS = [
   'Next.js',
