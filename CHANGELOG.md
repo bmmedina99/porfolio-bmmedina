@@ -1,3 +1,23 @@
+# [0.6.0](https://github.com/bmmedina99/bmmedina.dev/compare/v0.5.1...v0.6.0) (2025-03-06)
+
+
+### Bug Fixes
+
+* **porfolio:** :bug: Correct package manager version in package.json ([e13e3a7](https://github.com/bmmedina99/bmmedina.dev/commit/e13e3a701a74459ff5c00a90a5f85a522b81ee41))
+
+
+### Features
+
+* **about:** :sparkles: Add new icons for buttons ([9dbc55f](https://github.com/bmmedina99/bmmedina.dev/commit/9dbc55fff57b1db163698c68eedbf2472a53cb48))
+* **contact:** :sparkles: Add initial structure and improvements ([#32](https://github.com/bmmedina99/bmmedina.dev/issues/32)) ([54d7da2](https://github.com/bmmedina99/bmmedina.dev/commit/54d7da21d370bb140d976fbfadf68dedcdefd12b))
+* **footer:** :sparkles: Add basic structure for footer ([eb954d6](https://github.com/bmmedina99/bmmedina.dev/commit/eb954d6f3629fe916710c58c3711f83dd35f5683))
+* **footer:** :sparkles: Add LinkedIn and Instagram icons ([79665bb](https://github.com/bmmedina99/bmmedina.dev/commit/79665bbe998573aeaad844e12885f39a45c741bc))
+
+
+### Performance Improvements
+
+* **scroll:** :zap: Simplify scroll script ([024abcc](https://github.com/bmmedina99/bmmedina.dev/commit/024abccadb2efccb1c06e4bc4168be680e6d7e86))
+
 ## [0.5.1](https://github.com/bmmedina99/bmmedina.dev/compare/v0.5.0...v0.5.1) (2025-02-22)
 
 
