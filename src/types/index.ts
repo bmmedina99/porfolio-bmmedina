@@ -33,3 +33,10 @@ export interface Profile {
     endDate: string
   }[]
 }
+
+export interface Social {
+  id: number
+  name: string
+  icon: string
+  link: string
+}

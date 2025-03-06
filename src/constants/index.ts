@@ -1,6 +1,6 @@
 import ProfileImg from '@/assets/profile.png'
 import Temporal from '@/assets/projects/temporal.png'
-import type { Experience, Profile, Project } from '@/types'
+import type { Experience, Profile, Project, Social } from '@/types'
 
 export const SCROLL_OFFSET = 96
 
@@ -158,3 +158,24 @@ export const PROFILE: Profile = {
     },
   ],
 }
+
+export const SOCIAL_LINK: Social[] = [
+  {
+    id: 0,
+    name: 'GitHub',
+    icon: 'git-github',
+    link: 'https://github.com/bmmedina99'
+  },
+  {
+    id: 1,
+    name: 'LinkedIn',
+    icon: 'linkedin',
+    link: 'https://www.linkedin.com/in/bmmedina99/'
+  },
+  {
+    id: 2,
+    name: 'Instagram',
+    icon: 'instagram',
+    link: 'https://www.instagram.com/bmmedina99/'
+  }
+]
