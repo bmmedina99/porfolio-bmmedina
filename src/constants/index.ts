@@ -164,18 +164,18 @@ export const SOCIAL_LINK: Social[] = [
     id: 0,
     name: 'GitHub',
     icon: 'git-github',
-    link: 'https://github.com/bmmedina99'
+    link: 'https://github.com/bmmedina99',
   },
   {
     id: 1,
     name: 'LinkedIn',
     icon: 'linkedin',
-    link: 'https://www.linkedin.com/in/bmmedina99/'
+    link: 'https://www.linkedin.com/in/bmmedina99/',
   },
   {
     id: 2,
     name: 'Instagram',
     icon: 'instagram',
-    link: 'https://www.instagram.com/bmmedina99/'
-  }
+    link: 'https://www.instagram.com/bmmedina99/',
+  },
 ]
